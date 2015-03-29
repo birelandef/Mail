@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 /**
  * Created by Sophie on 18.03.2015.
  */
-public class Person extends Generator {
+public class Person extends Generator{
     protected String firstName;
     protected String secondName;
     protected GregorianCalendar birthDay;

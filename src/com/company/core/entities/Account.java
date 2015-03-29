@@ -6,6 +6,8 @@ import java.util.GregorianCalendar;
  * Created by Sophie on 18.03.2015.
  */
 public class Account extends Person {
+    public static String  serialFileName = String.valueOf(Account.class);
+
     private String login;
     private String password;
 
@@ -33,5 +35,4 @@ public class Account extends Person {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }

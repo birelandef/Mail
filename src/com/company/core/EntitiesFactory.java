@@ -1,6 +1,7 @@
 package com.company.core;
 
 import com.company.core.entities.*;
+import com.company.core.tools.Generator;
 
 import javax.mail.Address;
 import javax.mail.internet.InternetAddress;
@@ -30,6 +31,10 @@ public class EntitiesFactory implements AbstractFactory {
             }
         }
         return localInstance;
+    }
+
+    public <T extends Generator> T create (){
+        return new T();
     }
 
     @Override

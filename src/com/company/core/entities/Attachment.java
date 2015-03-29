@@ -8,6 +8,9 @@ import java.io.File;
  * Created by Sophie on 18.03.2015.
  */
 public class Attachment extends Generator {
+
+    public static String  serialFileName = String.valueOf(Attachment.class);
+
     private String name;
     private int size;
     private File file;

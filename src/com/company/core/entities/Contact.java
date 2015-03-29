@@ -8,6 +8,9 @@ import java.util.GregorianCalendar;
  * Created by Sophie on 18.03.2015.
  */
 public class Contact extends Person {
+
+    public static String  serialFileName = String.valueOf(Contact.class);
+
     private InternetAddress internetAddress;
 
     public Contact() {

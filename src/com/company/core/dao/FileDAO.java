@@ -1,33 +1,58 @@
 package com.company.core.dao;
 
+import com.company.core.EntitiesFactory;
 import com.company.core.tools.Generator;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.math.BigInteger;
-import java.util.Map;
 
 /**
  * Created by Sophie on 25.03.2015.
  */
-public class FileDAO implements DAO {
+public class FileDAO<T extends Generator>  implements DAO<T> {
+
+    File serialFile;
 
     @Override
-    public void create(Map<String , String> map) {
-
+    public BigInteger create(Generator entity) throws IOException {
+        serialFile = new File(System.getProperty("user.dir") + separator +  "resources" + separator + entity.getClass().getSimpleName() + ".mail");
+        serialFile.createNewFile();
+        FileOutputStream outputStream = new FileOutputStream(serialFile, true);
+        entity.serialized(outputStream);
+        return entity.getId();
+    }
+    /*
+    * для того, чтобы обновить данные о любом экземпляре сущности, перезапишем файл полностью
+     */
+    @Override
+    public void update(Generator entity) throws IOException {
+        if (read(entity.getId()) != null){
+            delete(entity.getId());
+        }
+        create(entity);
     }
 
     @Override
-    public void update(Generator entity) {
-
-    }
-
-    @Override
-    public boolean remove(BigInteger id) {
+    public boolean delete(BigInteger id) {
         //TODO заглушка
         return false;
     }
 
     @Override
-    public Map<String,String> findByID(BigInteger id) {
-        return null;
+    public T read(BigInteger id) {
+        //EntitiesFactory factory = EntitiesFactory.getInstance();
+        T obj = new T();
+        try {
+            obj.deserialized(new FileInputStream(serialFile));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return obj;
     }
+
 }

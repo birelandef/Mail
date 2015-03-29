@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by Sophie on 23.03.2015.
  */
-public class MemoryDAO implements DAO {
+public class MemoryDAO <T extends Generator> implements DAO<T> {
     private Map<BigInteger,  Map<String,String>> mapEntities = new HashMap<>();
 
     @Override
@@ -18,31 +18,31 @@ public class MemoryDAO implements DAO {
     * Map<BigInteger, String> mapEntity
     * @param map - map с парами <название поля, значение>
     */
-    public void create(Map<String, String> map) {
-        BigInteger index = new BigInteger(map.get("id"));
-        map.remove("id");
-        mapEntities.put(index, map);
+    public BigInteger create(T entity) throws IllegalAccessException {
+        Map<String, String> map = null;
+            map = entity.getFields();
+            BigInteger index = new BigInteger(map.get("id"));
+            map.remove("id");
+            mapEntities.put(index, map);
+            return index;
     }
+
     /*
-   * обновление экземпляра сущности под определенным идентификатором. Производится поиск экземпляра по идентификатору в
-   * mapEntity и записываются текущие значения полей из текущего  экземпляра
-   * (поиск этого экземпляра по id?)
-   * @param id  - идентификатор обновляемого экземпляра сущности
-   */
+       * обновление экземпляра сущности под определенным идентификатором. Производится поиск экземпляра по идентификатору в
+       * mapEntity и записываются текущие значения полей из текущего  экземпляра
+       * (поиск этого экземпляра по id?)
+       * @param id  - идентификатор обновляемого экземпляра сущности
+       */
     @Override
-    public void update(Generator entity) {
-        if (findByID(entity.getId()) != null){
-            remove(entity.getId());
+    public void update(T entity) throws IllegalAccessException {
+        if (read(entity.getId()) != null) {
+            delete(entity.getId());
         }
-        try {
-            create(entity.getFields());
-        } catch (IllegalAccessException e) {
-            System.out.println("Несоответствие полей сущности");
-        }
+            create(entity);
     }
 
     @Override
-    public boolean remove(BigInteger id) {
+    public boolean delete (BigInteger id) {
         if (mapEntities.containsKey(id)){
             mapEntities.remove(id);
             return true;
@@ -57,10 +57,12 @@ public class MemoryDAO implements DAO {
     * под таким идентификатором не существует
     */
     @Override
-    public Map<String,String> findByID(BigInteger id) {
+    //TODO переделать под Generator
+    public T read(BigInteger id) {
         for (Map.Entry<BigInteger, Map<String,String>> entry: mapEntities.entrySet()){
             if (entry.getKey() == id) {
-                return entry.getValue();
+
+                return null ; //entry.getValue();
             }
         }
         return null;

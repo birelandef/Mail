@@ -8,6 +8,10 @@ import java.math.BigInteger;
  * Created by Sophie on 18.03.2015.
  */
 public class Folder extends Generator {
+
+    public static String  serialFileName = String.valueOf(Folder.class);
+
+
     private String name;
     private BigInteger idParent;
     private BigInteger idAccount;

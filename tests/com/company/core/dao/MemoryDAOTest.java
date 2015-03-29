@@ -41,7 +41,7 @@ public void testCreate() throws Exception {
     GregorianCalendar birthDay = new GregorianCalendar(1998, 6, 5);
     String gender = "female";
     Person person  = factory.createPerson(firstName,secondName, birthDay, gender);
-    memory.create(person.getFields());
+    memory.create(person);
     //TODO
 //    assertEquals("Различаются имена",person.getFirstName(),firstName);
 //    assertEquals("Различаются фамилии",person.getSecondName(),secondName);

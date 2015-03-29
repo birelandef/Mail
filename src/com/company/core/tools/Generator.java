@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * Created by Sophie on 18.03.2015.
  */
-public class Generator implements Serializable {
+public  class Generator implements Serializable, Constants{
 
     protected final BigInteger id;
 
@@ -41,9 +41,9 @@ public class Generator implements Serializable {
         }
     }
 
-    public Generator deserialized(FileInputStream in) throws IOException, ClassNotFoundException {
+    public <T extends Generator> T deserialized(FileInputStream in) throws IOException, ClassNotFoundException {
         try (ObjectInputStream oin = new ObjectInputStream(in)){
-            Generator obj = (Generator) oin.readObject();
+            T obj = (T) oin.readObject();
             in.close();
             return  obj;
         }
@@ -56,5 +56,4 @@ public class Generator implements Serializable {
     protected final void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
         in.defaultReadObject();
     }
-
 }

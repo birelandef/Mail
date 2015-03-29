@@ -10,6 +10,9 @@ import java.util.List;
  * Created by Sophie on 18.03.2015.
  */
 public class Letter extends Generator {
+
+    public static String  serialFileName = String.valueOf(Letter.class);
+
     //TODO.GregorianCalendar
     private Date dateFrom;
     private Address recipient;
