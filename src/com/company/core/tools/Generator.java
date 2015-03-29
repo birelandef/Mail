@@ -1,6 +1,6 @@
 package com.company.core.tools;
 
-import java.io.Serializable;
+import java.io.*;
 import java.lang.reflect.Field;
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -30,5 +30,31 @@ public class Generator implements Serializable {
         return fields;
     };
 
+    /*
+    *сериализация экземпляра сущности
+    * @params out  поток определенного файла (различные файлы ля разлиных сущностей)
+     */
+    public void serialized(FileOutputStream out) throws IOException {
+        try (ObjectOutputStream oout = new ObjectOutputStream(out)){
+            oout.writeObject(this);
+            out.close();
+        }
+    }
+
+    public Generator deserialized(FileInputStream in) throws IOException, ClassNotFoundException {
+        try (ObjectInputStream oin = new ObjectInputStream(in)){
+            Generator obj = (Generator) oin.readObject();
+            in.close();
+            return  obj;
+        }
+    }
+
+    protected final void writeObject(ObjectOutputStream out) throws IOException{
+        out.defaultWriteObject();
+    }
+
+    protected final void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+    }
 
 }
