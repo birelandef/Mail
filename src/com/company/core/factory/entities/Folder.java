@@ -1,30 +1,25 @@
-package com.company.core.entities;
-
-import com.company.core.tools.Generator;
+package com.company.core.factory.entities;
 
 import java.math.BigInteger;
 
 /**
  * Created by Sophie on 18.03.2015.
  */
-public class Folder extends Generator {
-
-    public static String  serialFileName = String.valueOf(Folder.class);
-
+public class Folder extends Entity {
 
     private String name;
+    private BigInteger idPerson;
     private BigInteger idParent;
     private BigInteger idAccount;
-    private String fullName;
+    private String description;
 
-    public Folder(String name, BigInteger idParent, BigInteger idAccount, String fullName) {
+    public Folder(String name, BigInteger idPerson, BigInteger idParent, BigInteger idAccount, String description) {
+        super();
         this.name = name;
+        this.idPerson = idPerson;
         this.idParent = idParent;
         this.idAccount = idAccount;
-        this.fullName = fullName;
-    }
-
-    public Folder() {
+        this.description = description;
     }
 
     public String getName() {
@@ -51,11 +46,15 @@ public class Folder extends Generator {
         this.idAccount = idAccount;
     }
 
-    public String getFullName() {
-        return fullName;
+    public BigInteger getIdPerson() {
+        return idPerson;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

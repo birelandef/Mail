@@ -1,7 +1,7 @@
 package com.company.core.dao;
 
 import com.company.core.EntitiesFactory;
-import com.company.core.entities.Person;
+import com.company.core.factory.entities.Person;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

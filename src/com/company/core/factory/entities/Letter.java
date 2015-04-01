@@ -1,46 +1,33 @@
-package com.company.core.entities;
+package com.company.core.factory.entities;
 
-import com.company.core.tools.Generator;
-import javax.mail.Address;
 import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 /**
  * Created by Sophie on 18.03.2015.
  */
-public class Letter extends Generator {
+public class Letter extends Entity {
 
-    public static String  serialFileName = String.valueOf(Letter.class);
-
-    //TODO.GregorianCalendar
     private Date dateFrom;
-    private Address recipient;
-    private List<Address> sender;
+    private String emailRecipient;
+    private List<String> listSender;
     private String subject;
-    private List<Address> carbonCopy;
-    private List<Address> blindCarbonCopy;
+    private List<String> carbonCopy;
+    private List<String> blindCarbonCopy;
     private String message;
-    private List<Attachment> listAttachment;
+    private List<Attachment> listAttachment = new ArrayList<>();
     private BigInteger idFolder;
     private boolean isRead;
 
-    public Letter() {
-    }
-
-    public Letter(Date dateFrom,
-                  Address recipient,
-                  List<Address> sender,
-                  String subject,
-                  List<Address> carbonCopy,
-                  List<Address> blindCarbonCopy,
-                  String message,
-                  List<Attachment> listAttachment,
-                  BigInteger idFolder,
+    public Letter(Date dateFrom, String emailRecipient, List<String> listSender, String subject, List<String> carbonCopy,
+                  List<String> blindCarbonCopy, String message, List<Attachment> listAttachment, BigInteger idFolder,
                   boolean isRead) {
+        super();
         this.dateFrom = dateFrom;
-        this.recipient = recipient;
-        this.sender = sender;
+        this.emailRecipient = emailRecipient;
+        this.listSender = listSender;
         this.subject = subject;
         this.carbonCopy = carbonCopy;
         this.blindCarbonCopy = blindCarbonCopy;
@@ -58,20 +45,20 @@ public class Letter extends Generator {
         this.dateFrom = dateFrom;
     }
 
-    public Address getRecipient() {
-        return recipient;
+    public String getEmailRecipient() {
+        return emailRecipient;
     }
 
-    public void setRecipient(Address recipient) {
-        this.recipient = recipient;
+    public void setEmailRecipient(String emailRecipient) {
+        this.emailRecipient = emailRecipient;
     }
 
-    public List<Address> getSender() {
-        return sender;
+    public List<String> getListSender() {
+        return listSender;
     }
 
-    public void setSender(List<Address> sender) {
-        this.sender = sender;
+    public void setListSender(List<String> listSender) {
+        this.listSender = listSender;
     }
 
     public String getSubject() {
@@ -82,19 +69,19 @@ public class Letter extends Generator {
         this.subject = subject;
     }
 
-    public List<Address> getCarbonCopy() {
+    public List<String> getCarbonCopy() {
         return carbonCopy;
     }
 
-    public void setCarbonCopy(List<Address> carbonCopy) {
+    public void setCarbonCopy(List<String> carbonCopy) {
         this.carbonCopy = carbonCopy;
     }
 
-    public List<Address> getBlindCarbonCopy() {
+    public List<String> getBlindCarbonCopy() {
         return blindCarbonCopy;
     }
 
-    public void setBlindCarbonCopy(List<Address> blindCarbonCopy) {
+    public void setBlindCarbonCopy(List<String> blindCarbonCopy) {
         this.blindCarbonCopy = blindCarbonCopy;
     }
 

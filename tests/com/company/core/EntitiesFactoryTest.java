@@ -1,6 +1,6 @@
 package com.company.core;
 
-import com.company.core.entities.*;
+import com.company.core.factory.entities.*;
 import org.junit.Test;
 
 import javax.mail.internet.InternetAddress;

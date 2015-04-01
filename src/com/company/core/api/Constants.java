@@ -1,4 +1,4 @@
-package com.company.core.tools;
+package com.company.core.api;
 
 import java.io.File;
 
@@ -6,5 +6,5 @@ import java.io.File;
  * Created by Sophie on 29.03.2015.
  */
 public interface Constants {
-    public static String separator  = File.separator;
+    public static final  String separator  = File.separator;
 }

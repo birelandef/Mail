@@ -1,21 +1,15 @@
-package com.company.core.entities;
-
-import com.company.core.tools.Generator;
-
-import java.io.File;
+package com.company.core.factory.entities;
 
 /**
  * Created by Sophie on 18.03.2015.
  */
-public class Attachment extends Generator {
-
-    public static String  serialFileName = String.valueOf(Attachment.class);
+public class Attachment extends Entity {
 
     private String name;
     private int size;
-    private File file;
+    private byte[] file;
 
-    public Attachment(String name, int size, File file) {
+    public Attachment(String name, int size, byte[] file) {
         this.name = name;
         this.size = size;
         this.file = file;
@@ -31,11 +25,11 @@ public class Attachment extends Generator {
         this.name = name;
     }
 
-    public File getFile() {
+    public byte[] getFile() {
         return file;
     }
 
-    public void setFile(File file) {
+    public void setFile(byte[] file) {
         this.file = file;
     }
 

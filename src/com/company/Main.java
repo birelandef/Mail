@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.core.EntitiesFactory;
 import com.company.core.dao.FileDAO;
-import com.company.core.entities.Person;
+import com.company.core.factory.entities.Person;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -18,7 +18,7 @@ public class Main {
         dao.create(person1);
         System.out.println(person1.getId());
         dao.create(person2);
-        person1 = (Person) dao.read(BigInteger.valueOf(Long.valueOf("1427892405917")));
+        person1 = (Person) dao.findById(BigInteger.valueOf(Long.valueOf("1427892405917")));
 //        person2 = (Person) dao.read(BigInteger.valueOf(11));
         System.out.println(person1.getFirstName());
 

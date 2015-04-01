@@ -1,30 +1,57 @@
 package com.company.core.dao;
 
-import com.company.core.tools.Generator;
+import com.company.core.api.DAO;
+import com.company.core.factory.entities.*;
 
+import java.lang.reflect.Field;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by Sophie on 23.03.2015.
  */
-public class MemoryDAO <T extends Generator> implements DAO<T> {
-    private Map<BigInteger,  Map<String,String>> mapEntities = new HashMap<>();
+public class MemoryDAO<T extends Entity> implements DAO<T> {
 
+    public static final Logger log = Logger.getLogger(MemoryDAO.class.toString());
+
+    private static Map<BigInteger, Person> persons = new HashMap<>();
+    private static Map<BigInteger, Account> accounts = new HashMap<>();
+    private static Map<BigInteger, Contact> contacts = new HashMap<>();
+    private static Map<BigInteger, Folder> folders = new HashMap<>();
+    private static Map<BigInteger, Letter> letters = new HashMap<>();
+    private static Map<BigInteger, Attachment> attachments = new HashMap<>();
+
+    /**
+     *
+     * @param entity the instance of entity
+     * @return
+     * @throws IllegalAccessException
+     */
     @Override
-    /*
-    * создание map - сущность со всеми полями. Содержимое map записывается в переменную
-    * Map<BigInteger, String> mapEntity
-    * @param map - map с парами <название поля, значение>
-    */
-    public BigInteger create(T entity) throws IllegalAccessException {
-        Map<String, String> map = null;
-            map = entity.getFields();
-            BigInteger index = new BigInteger(map.get("id"));
-            map.remove("id");
-            mapEntities.put(index, map);
-            return index;
+    public BigInteger create(T entity) {
+        log.log(Level.INFO, "The call method create() with parameters: ");
+        if (entity.getClass().isAssignableFrom(Person.class)) {
+            persons.put(entity.getId(), (Person) entity);
+        }
+        if (entity.getClass().isAssignableFrom(Account.class)) {
+            accounts.put(entity.getId(), (Account) entity);
+        }
+        if (entity.getClass().isAssignableFrom(Contact.class)) {
+            contacts.put(entity.getId(), (Contact) entity);
+        }
+        if (entity.getClass().isAssignableFrom(Folder.class)) {
+            folders.put(entity.getId(), (Folder) entity);
+        }
+        if (entity.getClass().isAssignableFrom(Letter.class)) {
+            letters.put(entity.getId(), (Letter) entity);
+        }
+        if (entity.getClass().isAssignableFrom(Attachment.class)) {
+            attachments.put(entity.getId(), (Attachment) entity);
+        }
+        return entity.getId();
     }
 
     /*
@@ -34,17 +61,22 @@ public class MemoryDAO <T extends Generator> implements DAO<T> {
        * @param id  - идентификатор обновляемого экземпляра сущности
        */
     @Override
-    public void update(T entity) throws IllegalAccessException {
-        if (read(entity.getId()) != null) {
-            delete(entity.getId());
+    public void update(BigInteger id, Map<String, Object> parameters) throws IllegalAccessException {
+        T entity = findById(id);
+        for (Field field : entity.getClass().getDeclaredFields()) {
+            field.setAccessible(true);
+            if (parameters.containsKey(field.getName())) {
+                //TODO this?
+                field.set(this, parameters.get(field.getName()));
+            }
         }
-            create(entity);
     }
 
     @Override
     public boolean delete (BigInteger id) {
-        if (mapEntities.containsKey(id)){
-            mapEntities.remove(id);
+        T entity = findById(id);
+        if (entity.getClass().isAssignableFrom(Person.class)) {
+            persons.remove(entity.getId());
             return true;
         }
         return false;
@@ -57,14 +89,15 @@ public class MemoryDAO <T extends Generator> implements DAO<T> {
     * под таким идентификатором не существует
     */
     @Override
-    //TODO
-    public T read(BigInteger id) {
-        for (Map.Entry<BigInteger, Map<String,String>> entry: mapEntities.entrySet()){
-            if (entry.getKey() == id) {
-
-                return null ; //entry.getValue();
-            }
-        }
-        return null;
+    @SuppressWarnings("unchecked")
+    public T findById(BigInteger id) {
+        Map<BigInteger, Entity> allEntities = new HashMap<>();
+        allEntities.putAll(persons);
+        allEntities.putAll(accounts);
+        allEntities.putAll(contacts);
+        allEntities.putAll(folders);
+        allEntities.putAll(letters);
+        allEntities.putAll(attachments);
+        return (T) allEntities.get(id);
     }
 }
