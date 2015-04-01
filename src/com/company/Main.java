@@ -12,12 +12,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         EntitiesFactory factory = EntitiesFactory.getInstance();
-        Person person = factory.createPerson("Mike", "Grey", new GregorianCalendar(1982, 5, 5), "male");
-
+        Person person1 = factory.createPerson("Mike", "Grey", new GregorianCalendar(1982, 5, 5), "male");
+        Person person2 = factory.createPerson("John", "MacWizard", new GregorianCalendar(1989, 4, 2), "male");
         FileDAO dao = new FileDAO();
-        dao.create(person);
-        person = (Person) dao.findByID(BigInteger.valueOf(12));
-        System.out.println(person.getFirstName());
+        dao.create(person1);
+        System.out.println(person1.getId());
+        dao.create(person2);
+        person1 = (Person) dao.read(BigInteger.valueOf(Long.valueOf("1427892405917")));
+//        person2 = (Person) dao.read(BigInteger.valueOf(11));
+        System.out.println(person1.getFirstName());
 
 //        String name = "newfile.txt";
 //        String s = File.separator;

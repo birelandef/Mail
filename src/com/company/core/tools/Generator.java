@@ -9,8 +9,9 @@ import java.util.Map;
 /**
  * Created by Sophie on 18.03.2015.
  */
-public  class Generator implements Serializable, Constants{
+public class Generator implements Serializable, Constants{
 
+    protected static final long serialVersionUID = Long.valueOf("6100508228625604496");// 1L;
     protected final BigInteger id;
 
     public Generator() {
@@ -37,23 +38,21 @@ public  class Generator implements Serializable, Constants{
     public void serialized(FileOutputStream out) throws IOException {
         try (ObjectOutputStream oout = new ObjectOutputStream(out)){
             oout.writeObject(this);
-            out.close();
         }
     }
 
-    public <T extends Generator> T deserialized(FileInputStream in) throws IOException, ClassNotFoundException {
+    public  <T extends Generator> T deserialized(FileInputStream in) throws IOException, ClassNotFoundException {
         try (ObjectInputStream oin = new ObjectInputStream(in)){
-            T obj = (T) oin.readObject();
-            in.close();
+            T obj  = (T) oin.readObject();
             return  obj;
         }
     }
 
-    protected final void writeObject(ObjectOutputStream out) throws IOException{
-        out.defaultWriteObject();
-    }
-
-    protected final void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        in.defaultReadObject();
-    }
+//    protected final void writeObject(ObjectOutputStream out) throws IOException{
+//        out.defaultWriteObject();
+//    }
+//
+//    protected final void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+//        in.defaultReadObject();
+//    }
 }

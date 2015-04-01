@@ -30,4 +30,6 @@ public interface AbstractFactory {
                                boolean isRead);
     public Person createPerson(String firstName, String secondName, GregorianCalendar birthDay, String gender);
 
+//    public <T extends Generator> T create();
+
 }

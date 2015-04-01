@@ -1,7 +1,6 @@
 package com.company.core;
 
 import com.company.core.entities.*;
-import com.company.core.tools.Generator;
 
 import javax.mail.Address;
 import javax.mail.internet.InternetAddress;
@@ -33,8 +32,8 @@ public class EntitiesFactory implements AbstractFactory {
         return localInstance;
     }
 
-    public <T extends Generator> T create (){
-        return new T();
+    public Account createAccount (){
+        return new Account();
     }
 
     @Override
@@ -75,4 +74,9 @@ public class EntitiesFactory implements AbstractFactory {
     public Person createPerson(String firstName, String secondName, GregorianCalendar birthDay, String gender) {
         return new Person(firstName,secondName,birthDay, gender) ;
     }
+
+//    public <T extends Generator> T create(){
+//        T obj = new T();
+//        return
+//    }
 }

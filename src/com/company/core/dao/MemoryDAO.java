@@ -57,7 +57,7 @@ public class MemoryDAO <T extends Generator> implements DAO<T> {
     * под таким идентификатором не существует
     */
     @Override
-    //TODO переделать под Generator
+    //TODO
     public T read(BigInteger id) {
         for (Map.Entry<BigInteger, Map<String,String>> entry: mapEntities.entrySet()){
             if (entry.getKey() == id) {
