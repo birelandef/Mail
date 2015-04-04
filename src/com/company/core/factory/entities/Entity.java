@@ -10,7 +10,7 @@ import java.math.BigInteger;
  */
 public abstract class Entity implements Serializable {
 
-//    protected static final long serialVersionUID = Long.valueOf("6100508228625604496");// 1L;
+   // protected static final long serialVersionUID = 1L;
     protected final BigInteger id;
 
     public Entity() {
@@ -37,6 +37,7 @@ public abstract class Entity implements Serializable {
     public int hashCode() {
         return id.hashCode();
     }
+
 //    public Map<String,String> getFields() throws IllegalAccessException {
 //        Map<String,String> fields = new HashMap<>();
 //        Field[] publicFields = this.getClass().getFields();

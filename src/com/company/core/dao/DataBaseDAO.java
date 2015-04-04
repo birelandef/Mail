@@ -13,12 +13,12 @@ import java.util.Map;
 public class DataBaseDAO<T extends Entity> implements DAO<T> {
 
     @Override
-    public BigInteger create(T entity) throws IllegalAccessException, IOException {
+    public BigInteger create(T entity) throws IOException {
         return null;
     }
 
     @Override
-    public void update(BigInteger id, Map<String, Object> parameters) throws IllegalAccessException, IOException {
+    public void update(BigInteger id, Map<String, Object> parameters) throws IllegalAccessException{
 
     }
 

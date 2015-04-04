@@ -7,7 +7,6 @@ import java.lang.reflect.Field;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -15,14 +14,14 @@ import java.util.logging.Logger;
  */
 public class MemoryDAO<T extends Entity> implements DAO<T> {
 
-    public static final Logger log = Logger.getLogger(MemoryDAO.class.toString());
+    private static final Logger log = Logger.getLogger(MemoryDAO.class.toString());
 
-    private static Map<BigInteger, Person> persons = new HashMap<>();
-    private static Map<BigInteger, Account> accounts = new HashMap<>();
-    private static Map<BigInteger, Contact> contacts = new HashMap<>();
-    private static Map<BigInteger, Folder> folders = new HashMap<>();
-    private static Map<BigInteger, Letter> letters = new HashMap<>();
-    private static Map<BigInteger, Attachment> attachments = new HashMap<>();
+    protected static Map<BigInteger, Person> persons = new HashMap<>();
+    protected static Map<BigInteger, Account> accounts = new HashMap<>();
+    protected static Map<BigInteger, Contact> contacts = new HashMap<>();
+    protected static Map<BigInteger, Folder> folders = new HashMap<>();
+    protected static Map<BigInteger, Letter> letters = new HashMap<>();
+    protected static Map<BigInteger, Attachment> attachments = new HashMap<>();
 
     /**
      *
@@ -32,7 +31,6 @@ public class MemoryDAO<T extends Entity> implements DAO<T> {
      */
     @Override
     public BigInteger create(T entity) {
-        log.log(Level.INFO, "The call method create() with parameters: ");
         if (entity.getClass().isAssignableFrom(Person.class)) {
             persons.put(entity.getId(), (Person) entity);
         }
@@ -66,8 +64,8 @@ public class MemoryDAO<T extends Entity> implements DAO<T> {
         for (Field field : entity.getClass().getDeclaredFields()) {
             field.setAccessible(true);
             if (parameters.containsKey(field.getName())) {
-                //TODO this?
-                field.set(this, parameters.get(field.getName()));
+                //TODO field?
+                field.set(field, parameters.get(field.getName()));
             }
         }
     }
