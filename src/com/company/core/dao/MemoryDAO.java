@@ -26,7 +26,7 @@ public class MemoryDAO<T extends Entity> implements DAO<T> {
     /**
      *
      * @param entity the instance of entity
-     * @return
+     * @return identifier of new instance
      * @throws IllegalAccessException
      */
     @Override

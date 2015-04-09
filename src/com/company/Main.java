@@ -18,13 +18,25 @@ public class Main {
                 new ArrayList<Contact>() );
         Person person2 = factory.createPerson("John", "MacWizard", new GregorianCalendar(1989, 4, 2), "male", new ArrayList<Account>(),
                 new ArrayList<Contact>() );
+        System.out.println("1 " + person1.getId());
+        System.out.println("2 " + person2.getId());
         FileDAO dao = new FileDAO();
         dao.create(person1);
-        System.out.println(person1.getId());
         dao.create(person2);
         person1 = (Person) dao.findById(person1.getId());
         person2 = (Person) dao.findById(person2.getId());
+        //person2.setFirstName("Sherlock");
+        System.out.println("after find " + person2.getId());
+        System.out.println(dao.delete(person2.getId()));
+        person2 = (Person) dao.findById(person2.getId());
         System.out.println(person2.getFirstName());
+//        try {
+//            dao.update(person2.getId(), person2.getFields() );
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
+//        person2 = (Person) dao.findById(person2.getId());
+//        System.out.println(person2.getFirstName());
 
 //        String name = "newfile.txt";
 //        String s = File.separator;

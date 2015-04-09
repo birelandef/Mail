@@ -1,9 +1,11 @@
 package com.company.core.factory.entities;
 
 /**
- * This class represents abstract image of account that is a certain e-mail address.
+ * This class represents abstract image of account that is a specified e-mail address.
  * The address has characterized an appropriate incoming and outgoing server.
  * Access to internal contents has carried out with login and password.
+ /*
+ /**
  * Created by Sophie on 18.03.2015.
  */
 public class Account extends Entity {

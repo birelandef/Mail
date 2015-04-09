@@ -24,6 +24,10 @@ public class FileDAO<T extends Entity> extends MemoryDAO<T> {
 
     private static File[] files = {filePerson, fileAccount, fileContact, fileFolder, fileLetter, fileAttachment};
 
+    /**
+     * Constructor which initializes all files for store info about entities
+     * @throws IOException if any file didn't create
+     */
     public FileDAO() throws IOException {
         new File(Constants.PATHTORESOURCES).mkdirs();
         for (File f: files){
@@ -34,23 +38,8 @@ public class FileDAO<T extends Entity> extends MemoryDAO<T> {
     @Override
     public BigInteger create(T entity) {
         BigInteger id = super.create(entity);
-        File outFile = null;
         try {
-            switch (entity.getClass().getSimpleName()){
-                case "Person": outFile = filePerson;
-                                break;
-                case "Account": outFile = fileAccount;
-                                break;
-                case "Contact": outFile = fileContact;
-                                break;
-                case "Folder": outFile = fileFolder;
-                                break;
-                case "Letter": outFile = fileLetter;
-                                break;
-                case "Attachment": outFile = fileAttachment;
-                                break;
-                default: throw new InvalidObjectException("Type mismatch");
-            }
+            File outFile = chooseFile(entity.getClass().getSimpleName());
             serialized(entity, new FileOutputStream(outFile));
         } catch (IOException e) {
             log.error("Error has occurred ", e);
@@ -60,15 +49,40 @@ public class FileDAO<T extends Entity> extends MemoryDAO<T> {
 
     @Override
     public void update(BigInteger id, Map<String, Object> parameters) throws IllegalAccessException {
+        T obj = findById(id);
         super.update(id, parameters);
-
+        create(obj);
     }
 
     @Override
     public boolean delete(BigInteger id) {
-        T delObj = findById(id);
-
-        return false;
+        T obj = findById(id);
+        super.delete(id);
+        try {
+            Map map = null;
+            switch (obj.getClass().getSimpleName()){
+                case "Person": map = persons;
+                    break;
+                case "Account": map = accounts;
+                    break;
+                case "Contact": map = contacts;
+                    break;
+                case "Folder": map = folders;
+                    break;
+                case "Letter": map = letters;
+                    break;
+                case "Attachment": map = attachments;
+                    break;
+                default: throw new InvalidObjectException("Type mismatch");
+            }
+            //TODO как-то записать иначе
+            for(Map.Entry<BigInteger, T> entry : map.entrySet()){
+                create((T) entry.getValue());
+            }
+        } catch (IOException e) {
+            log.error("Error has occurred ", e);
+        }
+        return true;
     }
 
     @Override
@@ -129,6 +143,32 @@ public class FileDAO<T extends Entity> extends MemoryDAO<T> {
         }
     }
 
+    /**
+     * Choose file which would be append new instance
+     * @param clazz name of instance's class
+     * @return file which corresponds to the instance
+     * @throws InvalidObjectException if such file don't exists (absence such class)
+     */
+    private File chooseFile(String clazz) throws InvalidObjectException {
+            File outFile = null;
+                switch (clazz){
+                    case "Person": outFile = filePerson;
+                        break;
+                    case "Account": outFile = fileAccount;
+                        break;
+                    case "Contact": outFile = fileContact;
+                        break;
+                    case "Folder": outFile = fileFolder;
+                        break;
+                    case "Letter": outFile = fileLetter;
+                        break;
+                    case "Attachment": outFile = fileAttachment;
+                        break;
+                    default: throw new InvalidObjectException("Type mismatch");
+                }
+        return  outFile;
+    }
+
     public void serialized(Object obj, FileOutputStream out) throws IOException {
         try (ObjectOutputStream oout = new ObjectOutputStream(out)){
             oout.writeObject(obj);
@@ -144,73 +184,6 @@ public class FileDAO<T extends Entity> extends MemoryDAO<T> {
         } finally {
             oin.close();
             in.close();
-
         }
     }
-
-
-//    public FileDAO() {
-//        serialFile = new File(System.getProperty("user.dir") + separator +  "resources" + separator + entity.getClass().getSimpleName() + ".mail");
-//        System.out.println("name " + serialFile.getName());
-//        tClass = entity.getClass();
-//        try {
-//            serialFile.createNewFile();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-
-//    @Override
-//    public BigInteger create(T entity) throws IOException {
-//        serialFile = new File(System.getProperty("user.dir") + separator +  "resources" + separator + entity.getClass().getSimpleName() + ".mail");
-//        System.out.println("name " + serialFile.getName());
-//        tClass = entity.getClass();
-//        serialFile.createNewFile();
-//
-//        FileOutputStream outputStream = new FileOutputStream(serialFile, true);//true для дописывания файла
-//        entity.serialized(outputStream);
-//        outputStream.close();
-//        return entity.getId();
-//    }
-//    /*
-//    * для того, чтобы обновить данные о любом экземпляре сущности, перезапишем файл полностью
-//     */
-//    @Override
-//    public void update(T entity) throws IOException {
-//        if (read(entity.getId()) != null){
-//            delete(entity.getId());
-//        }
-//        create(entity);
-
-//    }
-//
-//    @Override
-//    public boolean delete(BigInteger id) {
-//        //TODO заглушка
-//        return false;
-//    }
-//
-//    @Override
-//    public T read(BigInteger id)  {
-//        T obj = null;
-//        try {
-//            FileInputStream fis = new FileInputStream(serialFile);
-//            obj = (T) tClass.newInstance();
-//           while (obj.getId() != id){
-//                obj = obj.deserialized(fis);
-//            }
-//            fis.close();
-//        } catch (InstantiationException e) {
-//            e.printStackTrace();
-//        } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        return obj;
-//    }
-
 }

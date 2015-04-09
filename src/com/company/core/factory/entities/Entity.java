@@ -1,16 +1,23 @@
 package com.company.core.factory.entities;
 
-import java.io.*;
+import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * TODO javaDoc
+ * This abstract class was created to unify identifiers for all instances of entity.
+ * All other entities inherit from it and contain id. Id is unique inside one instance of
+ * this application.
  *
  * Created by Sophie on 18.03.2015.
  */
 public abstract class Entity implements Serializable {
 
    // protected static final long serialVersionUID = 1L;
+
+    //unique identifier of entity's instance
     protected final BigInteger id;
 
     public Entity() {
@@ -38,14 +45,14 @@ public abstract class Entity implements Serializable {
         return id.hashCode();
     }
 
-//    public Map<String,String> getFields() throws IllegalAccessException {
-//        Map<String,String> fields = new HashMap<>();
-//        Field[] publicFields = this.getClass().getFields();
-//        for (Field field : publicFields) {
-//            fields.put(field.getName(), (String) field.get(this));
-//        }
-//        return fields;
-//    };
+    public Map<String,Object> getFields() throws IllegalAccessException {
+        Map<String,Object> fields = new HashMap<>();
+        Field[] publicFields = this.getClass().getFields();
+        for (Field field : publicFields) {
+            fields.put(field.getName(), field.get(this));
+        }
+        return fields;
+    };
 
     /*
     *сериализация экземпляра сущности

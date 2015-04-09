@@ -1,15 +1,21 @@
 package com.company.core.factory.entities;
 
 /**
+ * This class represents the entity which contains the information about certain
+ * contact. The contact store full name about person and only one email address.
  *
+ */
+
+/**
  * Created by Sophie on 18.03.2015.
  */
 public class Contact extends Entity {
 
+    // email
     private String email;
-    // TODO javaDoc
+    // first name of person(who has this email)
     private String firstName;
-    // TODO javaDoc
+    // second name of person(who has this email)
     private String secondName;
 
     public Contact(String email, String firstName, String secondName) {
