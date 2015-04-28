@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 /**
- * TODO javaDoc
+ * Interface allows to create different entities
  *
  * Created by Sophie on 18.03.2015.
  */
