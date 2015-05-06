@@ -1,6 +1,6 @@
 package com.company.core.api;
 
-import com.company.core.factory.entities.*;
+import com.company.core.entity.*;
 
 import java.math.BigInteger;
 import java.util.Date;

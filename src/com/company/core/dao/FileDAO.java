@@ -1,6 +1,8 @@
 package com.company.core.dao;
 
 import com.company.core.api.Constants;
+import com.company.core.entity.Attachment;
+import com.company.core.entity.Entity;
 import com.company.core.factory.entities.*;
 import org.apache.log4j.Logger; // Счастье
 

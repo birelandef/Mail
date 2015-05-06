@@ -12,9 +12,9 @@ import java.util.List;
 public class Letter extends Entity {
 
     /**
-     * The person identifier
+     * The idPerson identifier
      */
-    private String person;
+    private String idPerson;
     /**
      * The identifier of the folder containing the message
      */
@@ -22,7 +22,7 @@ public class Letter extends Entity {
     /**
      * Flag view the letter
      */
-    private boolean seen;
+    private boolean isSeen;
     /**
      * Email address of the mailbox from which the mail is sent
      */
@@ -30,10 +30,12 @@ public class Letter extends Entity {
     /**
      * A list of electronic mailbox address of the recipients of the letter
      */
+    //TODO в схеме?
     private List<String> toWhom = new ArrayList<String>();
     /**
      * A list of email addresses mailboxes of recipients of copies of the letter
      */
+    //TODO в схеме?
     private ArrayList<String> copy = new ArrayList<String>();
     /**
      * Message subject
@@ -46,18 +48,19 @@ public class Letter extends Entity {
     /**
      * The list of files attached to the message
      */
+    //TODO в схеме?
     private List<Attachment> attachments = new ArrayList<Attachment>();
     /**
      * Date receive or send message
      */
     private Date date;
 
-    public Letter(String person, String idFolder, boolean seen, String fromWhom, List<String> toWhom,
+    public Letter(String idPerson, String idFolder, boolean isSeen, String fromWhom, List<String> toWhom,
                   ArrayList<String> copy, String subject, String message, List<Attachment> attachments, Date date) {
         super();
-        this.person = person;
+        this.idPerson = idPerson;
         this.idFolder = idFolder;
-        this.seen = seen;
+        this.isSeen = isSeen;
         this.fromWhom = fromWhom;
         this.toWhom = toWhom;
         this.copy = copy;
@@ -67,12 +70,12 @@ public class Letter extends Entity {
         this.date = date;
     }
 
-    public String getPerson() {
-        return person;
+    public String getidPerson() {
+        return idPerson;
     }
 
-    public void setPerson(String person) {
-        this.person = person;
+    public void setidPerson(String idPerson) {
+        this.idPerson = idPerson;
     }
 
     public String getIdFolder() {
@@ -83,12 +86,12 @@ public class Letter extends Entity {
         this.idFolder = idFolder;
     }
 
-    public boolean isSeen() {
-        return seen;
+    public boolean isisSeen() {
+        return isSeen;
     }
 
-    public void setSeen(boolean seen) {
-        this.seen = seen;
+    public void setisSeen(boolean isSeen) {
+        this.isSeen = isSeen;
     }
 
     public String getFromWhom() {

@@ -10,6 +10,7 @@ public class Folder extends Entity {
     /**
      * The account identifier of the mailbox which contains this folder
      */
+    //TODO точно String?
     private String idAccount;
     /**
      * The name of the folder
@@ -18,10 +19,12 @@ public class Folder extends Entity {
     /**
      * The identifier of the parent folder
      */
+    //TODO точно String?
     private String idParentFolder;
     /**
      * The identifier of the user who owns the folder
      */
+    //TODO точно String?
     private String idPerson;
     /**
      * System folder or not
