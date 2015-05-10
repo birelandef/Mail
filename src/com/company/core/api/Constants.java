@@ -6,12 +6,16 @@ import java.io.File;
  * Created by Sophie on 29.03.2015.
  */
 public interface Constants {
-    public static final  String SEPARATOR  = File.separator;
-    public static final String PATHTORESOURCES = System.getProperty("user.dir") + Constants.SEPARATOR +
+    String SEPARATOR  = File.separator;
+    String PATHTORESOURCES = System.getProperty("user.dir") + Constants.SEPARATOR +
             "resources" + Constants.SEPARATOR;
-    public static final String QUERY_CREATE = "";
-    public static final String QUERY_UPDATE = "";
-    public static final String QUERY_DELETE = "";
-    public static final String QUERY_FIND = "";
+    String URL = "jdbc:oracle:thin:@localhost:1521:XE";
+    String nameDB = "Mail";
+    String name = "SOPHIE";
+    String password  = "SOPHIE";
+    String QUERY_ADD = "INSERT INTO ? VALUE ?";
+    String QUERY_UPDATE = "UPDATE ? SET ? WHERE ?";
+    String QUERY_DELETE = "DELETE FROM ? WHERE ?";
+    String QUERY_FIND = "";
 
 }

@@ -1,15 +1,14 @@
 package com.company.core.dao;
 
-import com.company.core.api.DAO;
-import com.company.core.factory.entities.Entity;
+import com.company.api.DAO;
+import com.company.core.entity.Entity;
 import org.apache.log4j.Logger;
 
-import java.io.IOException;
-import java.math.BigInteger;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Map;
+import java.util.Collection;
 
 /**
  * Created by Sophie on 25.03.2015.
@@ -17,49 +16,40 @@ import java.util.Map;
 class DataBaseDAO<T extends Entity> implements DAO<T> {
 
     private static final Logger logger = Logger.getLogger(DataBaseDAO.class);
-    private final Connection connection;
+    private PreparedStatement paramsStatement = null;
+    private static ConnectionwithDB dataBase;
 
-    DataBaseDAO(String database, String nameDB, String password) throws RuntimeException {
+    DataBaseDAO() throws  RuntimeException{
+        dataBase = ConnectionwithDB.getInstance();
+        if (dataBase == null) {
+            throw  new RuntimeException();
+        }
+    }
+
+    @Override
+    public void addEntity(T entity) {
         try {
-            connection = connect(database,nameDB, password);
-            if (connection == null){
-                throw new NullPointerException();
-            }
-        } catch (ClassNotFoundException e) {
-            logger.error("Driver of DB don't found ", e);
-            throw new RuntimeException();
-        } catch (SQLException | NullPointerException e) {
-            logger.error("Connection is not established ", e);
-            throw new RuntimeException();
+            paramsStatement = dataBase.connection.prepareStatement("INSERT INTO ? VALUE ?");
+            paramsStatement.setString((int)1, entity.getClass().getSimpleName());
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
     }
 
     @Override
-    public BigInteger create(T entity) throws IOException {
+    public Collection<T> getAllEntity(Class<T> entityClass) {
         return null;
     }
 
     @Override
-    public void update(BigInteger id, Map<String, Object> parameters) throws IllegalAccessException{
-
-    }
-
-    @Override
-    public boolean delete(BigInteger id) {
-        return false;
-    }
-
-    @Override
-    public T findById(BigInteger id) {
+    public T findEntityById(String idEntity) {
         return null;
     }
 
+    @Override
+    public void updateEntity(T entity) {}
 
-    public Connection connect(String database, String name, String password) throws ClassNotFoundException, SQLException {
-        String url = "jdbc:oracle:thin:@localhost:1521:" + database;
-        Class.forName("oracle.jdbc.driver.OracleDriver");
-        Connection connection = DriverManager.getConnection(url, name, password);
-        return connection;
-    }
+    @Override
+    public void removeEntity(T entity) {}
 }
