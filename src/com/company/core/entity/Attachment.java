@@ -1,5 +1,7 @@
 package com.company.core.entity;
 
+import java.util.Arrays;
+
 /**
  * The entity of the attached file
  *
@@ -14,11 +16,35 @@ public class Attachment extends Entity {
     /**
      * The contents of the file
      */
-    private byte[] file;
+    private byte[] files;
 
-    public Attachment(String name, byte[] file) {
+    /**
+     * idLetter
+     */
+    private String idLetter;
+
+    /**
+     * idFolder
+     */
+    private String idFolder;
+
+    /**
+     * idAccount
+     */
+    private String idAccount;
+
+    /**
+     * idPerson
+     */
+    private String idPerson;
+
+    public Attachment(String name, byte[] files, String idLetter, String idFolder, String idAccount, String idPerson) {
         this.name = name;
-        this.file = file;
+        this.files = files;
+        this.idLetter = idLetter;
+        this.idFolder = idFolder;
+        this.idAccount = idAccount;
+        this.idPerson = idPerson;
     }
 
     public String getName() {
@@ -29,11 +55,57 @@ public class Attachment extends Entity {
         this.name = name;
     }
 
-    public byte[] getFile() {
-        return file;
+
+    public byte[] getFiles() {
+        return files;
     }
 
-    public void setFile(byte[] file) {
-        this.file = file;
+    public void setFiles(byte[] files) {
+        this.files = files;
+    }
+
+    public String getIdLetter() {
+        return idLetter;
+    }
+
+    public void setIdLetter(String idLetter) {
+        this.idLetter = idLetter;
+    }
+
+    public String getIdFolder() {
+        return idFolder;
+    }
+
+    public void setIdFolder(String idFolder) {
+        this.idFolder = idFolder;
+    }
+
+    public String getIdAccount() {
+        return idAccount;
+    }
+
+    public void setIdAccount(String idAccount) {
+        this.idAccount = idAccount;
+    }
+
+    public String getIdPerson() {
+        return idPerson;
+    }
+
+    public void setIdPerson(String idPerson) {
+        this.idPerson = idPerson;
+    }
+
+    @Override
+    public String toString() {
+        return "Attachment{" +
+                "id='" + getId() + '\'' +
+                ", name='" + name + '\'' +
+                ", files=" + Arrays.toString(files) +
+                ", idLetter='" + idLetter + '\'' +
+                ", idFolder='" + idFolder + '\'' +
+                ", idAccount='" + idAccount + '\'' +
+                ", idPerson='" + idPerson + '\'' +
+                '}';
     }
 }

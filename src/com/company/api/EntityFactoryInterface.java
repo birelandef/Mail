@@ -3,7 +3,7 @@ package com.company.api;
 import com.company.core.entity.*;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -39,9 +39,10 @@ public interface EntityFactoryInterface {
      * @param password
      * @param outgoingMailServer
      * @param incomingMailServer
+     * @param idPerson
      * @return
      */
-    Account createAccount(String email, String password, String outgoingMailServer, String incomingMailServer);
+    Account createAccount(String email, String password, String outgoingMailServer, String incomingMailServer, String idPerson);
 
     Contact createContact(String email, String name, String surname);
 
@@ -73,13 +74,17 @@ public interface EntityFactoryInterface {
      * @return
      */
     Letter createLetter(String person, String idFolder, boolean seen, String fromWhom, List<String> toWhom,
-                        ArrayList<String> copy, String subject, String message, List<Attachment> attachments, Date date);
+                        List<String> copy, String subject, String message, List<Attachment> attachments, Date date);
 
     /**
      *
      * @param name
-     * @param file
+     * @param files
+     * @param idLetter
+     * @param idFolder
+     * @param idAccount
+     * @param idPerson
      * @return
      */
-    Attachment createAttachment(String name, byte[] file);
+    Attachment createAttachment(String name, byte[] files, String idLetter, String idFolder, String idAccount, String idPerson);
 }

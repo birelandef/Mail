@@ -1,5 +1,9 @@
 package com.company.core.entity;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.sql.PreparedStatement;
+
 /**
  * The entity of the account of the mailbox
  *
@@ -27,12 +31,19 @@ public class Account extends Entity {
      */
     private String incomingMailServer;
 
-    public Account(String email, String password, String outgoingMailServer, String incomingMailServer) {
+    /**
+     * id Person
+     */
+    private String idPerson;
+
+    public Account(String email, String password, String outgoingMailServer, String incomingMailServer, String idPerson) {
         super();
         this.email = email;
         this.password = password;
         this.outgoingMailServer = outgoingMailServer;
         this.incomingMailServer = incomingMailServer;
+        this.idPerson = idPerson;
+
     }
 
     public String getEmail() {
@@ -65,5 +76,25 @@ public class Account extends Entity {
 
     public void setIncomingMailServer(String incomingMailServer) {
         this.incomingMailServer = incomingMailServer;
+    }
+
+    public String  getIdPerson() {
+        return idPerson;
+    }
+
+    public void setIdPerson(String idPerson) {
+        this.idPerson = idPerson;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id='" + getId() + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", outgoingMailServer='" + outgoingMailServer + '\'' +
+                ", incomingMailServer='" + incomingMailServer + '\'' +
+                ", idPerson='" + idPerson + '\'' +
+                '}';
     }
 }

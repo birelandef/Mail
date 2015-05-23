@@ -4,8 +4,7 @@ import com.company.api.EntityFactoryInterface;
 import com.company.api.Gender;
 import com.company.core.entity.*;
 
-import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -35,8 +34,8 @@ public class EntityFactoryImpl implements EntityFactoryInterface {
     }
 
     @Override
-    public Account createAccount(String email, String password, String outgoingMailServer, String incomingMailServer) {
-        return new Account(email, password, outgoingMailServer, incomingMailServer);
+    public Account createAccount(String email, String password, String outgoingMailServer, String incomingMailServer, String idPerson) {
+        return new Account(email, password, outgoingMailServer, incomingMailServer, idPerson);
     }
 
     @Override
@@ -52,13 +51,13 @@ public class EntityFactoryImpl implements EntityFactoryInterface {
 
     @Override
     public Letter createLetter(String person, String idFolder, boolean seen, String fromWhom, List<String> toWhom,
-                               ArrayList<String> copy, String subject, String message, List<Attachment> attachments,
+                               List<String> copy, String subject, String message, List<Attachment> attachments,
                                Date date) {
         return new Letter(person, idFolder, seen, fromWhom, toWhom, copy, subject, message, attachments, date);
     }
 
     @Override
-    public Attachment createAttachment(String name, byte[] file) {
-        return new Attachment(name, file);
+    public Attachment createAttachment(String name, byte[] files, String idLetter, String idFolder, String idAccount, String idPerson) {
+        return new Attachment(name, files, idLetter, idFolder, idAccount, idPerson);
     }
 }

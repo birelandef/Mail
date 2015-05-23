@@ -7,7 +7,7 @@ import com.company.core.utils.IdGenerator;
  *
  * @author Sofia Ruban
  */
-public abstract class Entity {
+public abstract class Entity{
 
     /**
      * Identifier com.company.core.entity
@@ -16,6 +16,10 @@ public abstract class Entity {
 
     public Entity() {
         id = IdGenerator.generatorId();
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getId() {

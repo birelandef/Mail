@@ -10,7 +10,6 @@ public class Folder extends Entity {
     /**
      * The account identifier of the mailbox which contains this folder
      */
-    //TODO точно String?
     private String idAccount;
     /**
      * The name of the folder
@@ -19,12 +18,10 @@ public class Folder extends Entity {
     /**
      * The identifier of the parent folder
      */
-    //TODO точно String?
     private String idParentFolder;
     /**
      * The identifier of the user who owns the folder
      */
-    //TODO точно String?
     private String idPerson;
     /**
      * System folder or not
@@ -34,6 +31,10 @@ public class Folder extends Entity {
      * Description of folder
      */
     private String description;
+
+    public void setIsSystemFolder(boolean isSystemFolder) {
+        this.isSystemFolder = isSystemFolder;
+    }
 
     public Folder(String idAccount, String name, String idParentFolder, String idPerson, boolean isSystemFolder,
                   String description) {
@@ -92,5 +93,18 @@ public class Folder extends Entity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Folder{" +
+                "id='" + getId() + '\'' +
+                ", idAccount='" + idAccount + '\'' +
+                ", name='" + name + '\'' +
+                ", idParentFolder='" + idParentFolder + '\'' +
+                ", idPerson='" + idPerson + '\'' +
+                ", isSystemFolder=" + isSystemFolder +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Locale;
 
 /**
  * @author Sophie
@@ -17,7 +18,6 @@ public class ConnectionwithDB {
 
     private static ConnectionwithDB ourInstance = new ConnectionwithDB();
 
-
     public Connection connection;
 
     public static ConnectionwithDB getInstance() throws RuntimeException {
@@ -26,8 +26,9 @@ public class ConnectionwithDB {
 
     public ConnectionwithDB() throws RuntimeException{
         try {
+            Locale.setDefault(Locale.ENGLISH);
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            connection = DriverManager.getConnection(Constants.URL + Constants.nameDB, Constants.name, Constants.password);
+            connection = DriverManager.getConnection(Constants.URL, Constants.name, Constants.password);
             if (connection == null){
                 throw new NullPointerException();
             }

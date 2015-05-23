@@ -1,46 +1,56 @@
 package com.company.core.dao;
 
 import com.company.api.DAO;
+import com.company.core.api.AbstractFactory;
+import com.company.core.entity.Contact;
 import com.company.core.entity.Entity;
+import com.company.core.entity.Letter;
+import oracle.jdbc.proxy.annotation.Pre;
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.lang.reflect.Field;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Sophie on 25.03.2015.
  */
-class DataBaseDAO<T extends Entity> implements DAO<T> {
+public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
 
-    private static final Logger logger = Logger.getLogger(DataBaseDAO.class);
-    private PreparedStatement paramsStatement = null;
-    private static ConnectionwithDB dataBase;
+    protected static final Logger logger = Logger.getLogger(DataBaseDAO.class);
+    protected static ConnectionwithDB dataBase;
 
-    DataBaseDAO() throws  RuntimeException{
+    public static ConnectionwithDB getDataBase() {
+        return dataBase;
+    }
+
+    protected static PreparedStatement paramsStatement;
+
+    protected DataBaseDAO() throws  RuntimeException{
         dataBase = ConnectionwithDB.getInstance();
         if (dataBase == null) {
             throw  new RuntimeException();
         }
     }
-
     @Override
     public void addEntity(T entity) {
         try {
-            paramsStatement = dataBase.connection.prepareStatement("INSERT INTO ? VALUE ?");
-            paramsStatement.setString((int)1, entity.getClass().getSimpleName());
+            paramsStatement = getAddEntityQuery(entity);
+            paramsStatement.executeUpdate();
+            //костыль,но как по-другому - не знаю
+            if (entity.getClass().equals(Letter.class)){
+                Letter letter = (Letter) entity;
+
+            }
         } catch (SQLException e) {
+            logger.error("Can't add record ",e);
             e.printStackTrace();
         }
-
     }
 
-    @Override
-    public Collection<T> getAllEntity(Class<T> entityClass) {
-        return null;
-    }
 
     @Override
     public T findEntityById(String idEntity) {
@@ -48,8 +58,22 @@ class DataBaseDAO<T extends Entity> implements DAO<T> {
     }
 
     @Override
-    public void updateEntity(T entity) {}
+    public void updateEntity(T entity) {
+        removeEntity(entity);
+        addEntity(entity);
+    }
 
     @Override
-    public void removeEntity(T entity) {}
+    public void removeEntity(T entity) {
+        try {
+            paramsStatement =  dataBase.connection.prepareStatement("DELETE FROM " + entity.getClass().getSimpleName() + " WHERE id = ?");
+            paramsStatement.setString(1, entity.getId());
+            paramsStatement.executeUpdate();
+        } catch (SQLException e) {
+            logger.error("Can't delete record ", e);
+            e.printStackTrace();
+        }
+    }
+
+    abstract protected PreparedStatement getAddEntityQuery(T entity) throws SQLException;
 }

@@ -2,7 +2,7 @@ package com.company.core.entity;
 
 import com.company.api.Gender;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -160,5 +160,23 @@ public class Person extends Entity {
 
     public void setContacts(Map<String, Contact> contacts) {
         this.contacts.putAll(contacts);
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id='" + getId() + '\'' +
+                ", login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", gender=" + gender +
+                ", birthday=" + birthday +
+                ", country='" + country + '\'' +
+                ", city='" + city + '\'' +
+                ", info='" + info + '\'' +
+                ", mailboxes=" + mailboxes +
+                ", contacts=" + contacts +
+                '}';
     }
 }

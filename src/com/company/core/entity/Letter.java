@@ -1,7 +1,7 @@
 package com.company.core.entity;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -36,7 +36,7 @@ public class Letter extends Entity {
      * A list of email addresses mailboxes of recipients of copies of the letter
      */
     //TODO в схеме?
-    private ArrayList<String> copy = new ArrayList<String>();
+    private List<String> copy = new ArrayList<String>();
     /**
      * Message subject
      */
@@ -49,14 +49,14 @@ public class Letter extends Entity {
      * The list of files attached to the message
      */
     //TODO в схеме?
-    private List<Attachment> attachments = new ArrayList<Attachment>();
+    private List<Attachment> attachments = new ArrayList<>();
     /**
      * Date receive or send message
      */
     private Date date;
 
     public Letter(String idPerson, String idFolder, boolean isSeen, String fromWhom, List<String> toWhom,
-                  ArrayList<String> copy, String subject, String message, List<Attachment> attachments, Date date) {
+                  List<String> copy, String subject, String message, List<Attachment> attachments, Date date) {
         super();
         this.idPerson = idPerson;
         this.idFolder = idFolder;
@@ -86,7 +86,7 @@ public class Letter extends Entity {
         this.idFolder = idFolder;
     }
 
-    public boolean isisSeen() {
+    public boolean isSeen() {
         return isSeen;
     }
 
@@ -110,7 +110,7 @@ public class Letter extends Entity {
         this.toWhom.addAll(toWhom);
     }
 
-    public ArrayList<String> getCopy() {
+    public List<String> getCopy() {
         return copy;
     }
 
@@ -148,5 +148,22 @@ public class Letter extends Entity {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Letter{" +
+                "id='" + getId() + '\'' +
+                ", idPerson='" + idPerson + '\'' +
+                ", idFolder='" + idFolder + '\'' +
+                ", isSeen=" + isSeen +
+                ", fromWhom='" + fromWhom + '\'' +
+                ", toWhom=" + toWhom +
+                ", copy=" + copy +
+                ", subject='" + subject + '\'' +
+                ", message='" + message + '\'' +
+                ", attachments=" + attachments +
+                ", date=" + date +
+                '}';
     }
 }
