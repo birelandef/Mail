@@ -3,39 +3,56 @@ package com.company.core.dao.EntityDBDAO;
 import com.company.core.dao.DataBaseDAO;
 import com.company.core.entity.Contact;
 import com.company.core.factory.EntityFactoryImpl;
+import org.apache.log4j.Logger;
+
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import static com.company.core.dao.DBHelper.*;
+
 /**
+ * Class for special operation with Contacts such as getAllEntity and addEntity
+ *
  * @author Sophie
  * @date 14.05.2015.
  */
 public class ContactDAO extends DataBaseDAO<Contact>{
 
+    private static final Logger logger = Logger.getLogger(ContactDAO.class);
+
     @Override
     public Collection<Contact> getAllEntity(Class<Contact> entityClass) {
         Collection<Contact> collection = new ArrayList<Contact>();
+        Connection connection = getConnection();
+        PreparedStatement  paramsStatement = null;
+        ResultSet resultSet = null;
         try {
-            paramsStatement = dataBase.connection.prepareStatement("SELECT *  FROM " + entityClass.getSimpleName());
-            ResultSet resultSet = paramsStatement.executeQuery();
+            paramsStatement = connection.prepareStatement("SELECT * FROM CONTACT");
+            resultSet = paramsStatement.executeQuery();
             while (resultSet.next()) {
+                String email = resultSet.getString("email");
+                String name = resultSet.getString("name");
+                String surname = resultSet.getString("surname");
+
                 EntityFactoryImpl factory = (EntityFactoryImpl) EntityFactoryImpl.getInstance();
-                Contact contact = factory.createContact(resultSet.getString("email"), resultSet.getString("name"), resultSet.getString("surname"));
+                Contact contact = factory.createContact(email, name, surname);
                 contact.setId(resultSet.getString("id"));
                 collection.add(contact);
             }
         } catch (SQLException e) {
             logger.error("Can't delete record ", e);
-            e.printStackTrace();
+        } finally {
+            freeResources(connection, paramsStatement, resultSet);
         }
         return collection;
     }
 
-    protected PreparedStatement getAddEntityQuery(Contact entity) throws SQLException {
-            PreparedStatement paramsStatement = dataBase.connection.prepareStatement("INSERT INTO CONTACT VALUES (?,?,?,?)");
+    protected PreparedStatement getAddEntityQuery(Contact entity, Connection connection) throws SQLException {
+            PreparedStatement paramsStatement = connection.prepareStatement("INSERT INTO CONTACT VALUES (?,?,?,?)");
             paramsStatement.setString(1, entity.getId());
             paramsStatement.setString(2, entity.getEmail());
             paramsStatement.setString(3, entity.getName());

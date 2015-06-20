@@ -22,21 +22,16 @@ import static org.junit.Assert.*;
  */
 public class PersonDAOTest {
 
-    private static PersonDAO personDAO;
-    private static Person person;
+    private static final PersonDAO personDAO = new PersonDAO();
+    private static Person person = new Person("lesha@mail.ru", "password","Sanya","Saharov",
+                             Gender.MAN, new Date(1),"Russia", "Moscow","", new HashMap<String,Account>(), new HashMap<String, Contact>());
 
 
-    @BeforeClass
-    public static void setUp() throws Exception {
-        personDAO = new PersonDAO();
-        person = new Person("duma@mail.ru", "password","Sanya","Saharov",
-                Gender.MAN, new Date(1),"Russia", "Moscow","", new HashMap<String,Account>(), new HashMap<String, Contact>());
-    }
-
-    @Ignore
+//    @Ignore
     @Test
     public void testAddEntity() throws Exception {
         personDAO.addEntity(person);
+        System.out.println(person.getId());
         PreparedStatement statement = personDAO.getDataBase().connection.prepareStatement("SELECT * FROM PERSON WHERE id = '" + person.getId() + "'");
         assertEquals("Add new person", 1, statement.executeUpdate());
     }
@@ -56,19 +51,20 @@ public class PersonDAOTest {
     public void testFindEntityById() throws Exception {
 
     }
-    @Ignore
-    @Test
-    public void testUpdateEntity() throws Exception {
-        String newCity = "Bladimir";
-        person.setCity(newCity);
-        personDAO.updateEntity(person);
-        PreparedStatement statement = personDAO.getDataBase().connection.prepareStatement("SELECT City FROM PERSON WHERE id = '" + person.getId() + "'");
-        ResultSet resultSet = statement.executeQuery();
-        resultSet.next();
-        assertEquals("Update contact", resultSet.getString("CITY"), newCity);
-    }
+//    @Ignore
+//    @Test
+//    public void testUpdateEntity() throws Exception {
+//        String newCity = "MoscowCity";
+//        person.setCity(newCity);
+//        System.out.println(person.getCity());
+//        personDAO.updateEntity(person);
+//        PreparedStatement statement = personDAO.getDataBase().connection.prepareStatement("SELECT City FROM PERSON WHERE id = '" + person.getId() + "'");
+//        ResultSet resultSet = statement.executeQuery();
+//        resultSet.next();
+//        assertEquals("Update contact", resultSet.getString("CITY"), newCity);
+//    }
 
-    @Ignore
+//    @Ignore
     @Test
     public void testRemoveEntity() throws Exception {
         personDAO.removeEntity(person);

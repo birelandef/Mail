@@ -19,6 +19,11 @@ public class Letter extends Entity {
      * The identifier of the folder containing the message
      */
     private String idFolder;
+
+    /**
+     * The idAccount identifier
+     */
+    private  String idAccount;
     /**
      * Flag view the letter
      */
@@ -55,11 +60,12 @@ public class Letter extends Entity {
      */
     private Date date;
 
-    public Letter(String idPerson, String idFolder, boolean isSeen, String fromWhom, List<String> toWhom,
+    public Letter(String idPerson, String idFolder, String idAccount, boolean isSeen, String fromWhom, List<String> toWhom,
                   List<String> copy, String subject, String message, List<Attachment> attachments, Date date) {
         super();
         this.idPerson = idPerson;
         this.idFolder = idFolder;
+        this.idAccount = idAccount;
         this.isSeen = isSeen;
         this.fromWhom = fromWhom;
         this.toWhom = toWhom;
@@ -70,14 +76,6 @@ public class Letter extends Entity {
         this.date = date;
     }
 
-    public String getidPerson() {
-        return idPerson;
-    }
-
-    public void setidPerson(String idPerson) {
-        this.idPerson = idPerson;
-    }
-
     public String getIdFolder() {
         return idFolder;
     }
@@ -86,13 +84,21 @@ public class Letter extends Entity {
         this.idFolder = idFolder;
     }
 
-    public boolean isSeen() {
-        return isSeen;
-    }
+    public String getIdPerson() {return idPerson;}
 
-    public void setisSeen(boolean isSeen) {
-        this.isSeen = isSeen;
-    }
+    public void setIdPerson(String idPerson) {this.idPerson = idPerson;}
+
+    public String getIdAccount() {return idAccount;}
+
+    public void setIdAccount(String idAccount) {this.idAccount = idAccount;}
+
+    public boolean isSeen() {return isSeen;}
+
+    public void setIsSeen(boolean isSeen) {this.isSeen = isSeen;}
+
+    public List<String> getCopy() {return copy;}
+
+    public void setCopy(List<String> copy) {this.copy = copy;}
 
     public String getFromWhom() {
         return fromWhom;
@@ -106,17 +112,7 @@ public class Letter extends Entity {
         return toWhom;
     }
 
-    public void setToWhom(List<String> toWhom) {
-        this.toWhom.addAll(toWhom);
-    }
-
-    public List<String> getCopy() {
-        return copy;
-    }
-
-    public void setCopy(ArrayList<String> copy) {
-        this.copy = copy;
-    }
+    public void setToWhom(List<String> toWhom) {this.toWhom.addAll(toWhom);}
 
     public String getSubject() {
         return subject;

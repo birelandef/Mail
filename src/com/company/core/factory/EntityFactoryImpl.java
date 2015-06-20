@@ -50,10 +50,9 @@ public class EntityFactoryImpl implements EntityFactoryInterface {
     }
 
     @Override
-    public Letter createLetter(String person, String idFolder, boolean seen, String fromWhom, List<String> toWhom,
-                               List<String> copy, String subject, String message, List<Attachment> attachments,
-                               Date date) {
-        return new Letter(person, idFolder, seen, fromWhom, toWhom, copy, subject, message, attachments, date);
+    public Letter createLetter(String idPerson, String idFolder, String idAccount, boolean isSeen, String fromWhom, List<String> toWhom,
+                                           List<String> copy, String subject, String message, List<Attachment> attachments, Date date){
+        return new Letter(idPerson,idFolder, idAccount, isSeen, fromWhom, toWhom,copy, subject, message, attachments, date);
     }
 
     @Override

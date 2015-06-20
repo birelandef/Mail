@@ -61,9 +61,10 @@ public interface EntityFactoryInterface {
 
     /**
      *
-     * @param person
+     * @param idPerson
      * @param idFolder
-     * @param seen
+     * @param idAccount
+     * @param isSeen
      * @param fromWhom
      * @param toWhom
      * @param copy
@@ -73,7 +74,7 @@ public interface EntityFactoryInterface {
      * @param date
      * @return
      */
-    Letter createLetter(String person, String idFolder, boolean seen, String fromWhom, List<String> toWhom,
+    Letter createLetter(String idPerson, String idFolder, String idAccount, boolean isSeen, String fromWhom, List<String> toWhom,
                         List<String> copy, String subject, String message, List<Attachment> attachments, Date date);
 
     /**

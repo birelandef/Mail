@@ -38,11 +38,11 @@ public class AccountDAOTest {
         personDAO.addEntity(person);
     }
 
-    @AfterClass
-    public static void tearDown() throws Exception {
-        accountDAO.removeEntity(account);
-        personDAO.removeEntity(person);
-    }
+//    @AfterClass
+//    public static void tearDown() throws Exception {
+//        accountDAO.removeEntity(account);
+//        personDAO.removeEntity(person);
+//    }
 
     @Ignore
     @Test
@@ -68,7 +68,7 @@ public class AccountDAOTest {
 //    @Ignore
     @Test
     public void testUpdateEntity() throws Exception {
-        String newIncoming= "google";
+        String newIncoming= "newGoogle";
         account.setIncomingMailServer(newIncoming);
         accountDAO.updateEntity(account);
         PreparedStatement statement = accountDAO.getDataBase().connection.prepareStatement("SELECT INCOMINGMAILSERVER FROM ACCOUNT WHERE id = '" + account.getId() + "'");
@@ -76,7 +76,7 @@ public class AccountDAOTest {
         resultSet.next();
         assertEquals("Update account", resultSet.getString("INCOMINGMAILSERVER"), newIncoming);
     }
-//    @Ignore
+    @Ignore
     @Test
     public void testRemoveEntity() throws Exception {
         accountDAO.removeEntity(account);

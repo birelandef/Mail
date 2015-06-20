@@ -1,53 +1,43 @@
 package com.company.core.dao;
 
 import com.company.api.DAO;
-import com.company.core.api.AbstractFactory;
-import com.company.core.entity.Contact;
 import com.company.core.entity.Entity;
-import com.company.core.entity.Letter;
-import oracle.jdbc.proxy.annotation.Pre;
+import com.company.core.dao.DBHelper;
 import org.apache.log4j.Logger;
 
-import java.lang.reflect.Field;
-import java.sql.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import static com.company.core.dao.DBHelper.*;
 
 /**
- * Created by Sophie on 25.03.2015.
+ * @author Sophie
+ * @date 25.03.2015.
  */
 public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
 
-    protected static final Logger logger = Logger.getLogger(DataBaseDAO.class);
-    protected static ConnectionwithDB dataBase;
+    private static final Logger logger = Logger.getLogger(DataBaseDAO.class);
 
-    public static ConnectionwithDB getDataBase() {
-        return dataBase;
-    }
+//    protected DataBaseDAO() throws  RuntimeException{
+//        dataBase = ConnectionwithDB.getInstance();
+//        if (dataBase == null) {
+//            throw  new RuntimeException();
+//        }
+//    }
 
-    protected static PreparedStatement paramsStatement;
 
-    protected DataBaseDAO() throws  RuntimeException{
-        dataBase = ConnectionwithDB.getInstance();
-        if (dataBase == null) {
-            throw  new RuntimeException();
-        }
-    }
     @Override
     public void addEntity(T entity) {
+        Connection connection = getConnection();
+        PreparedStatement paramsStatement = null;
         try {
-            paramsStatement = getAddEntityQuery(entity);
+            paramsStatement = getAddEntityQuery(entity, connection);
             paramsStatement.executeUpdate();
-            //костыль,но как по-другому - не знаю
-            if (entity.getClass().equals(Letter.class)){
-                Letter letter = (Letter) entity;
-
-            }
         } catch (SQLException e) {
-            logger.error("Can't add record ",e);
-            e.printStackTrace();
+            logger.error("Can't add record ", e);
+        } finally {
+            freeResources(connection, paramsStatement);
         }
     }
 
@@ -65,15 +55,17 @@ public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
 
     @Override
     public void removeEntity(T entity) {
+        Connection connection = getConnection();
+        PreparedStatement paramsStatement = null;
         try {
-            paramsStatement =  dataBase.connection.prepareStatement("DELETE FROM " + entity.getClass().getSimpleName() + " WHERE id = ?");
+            paramsStatement =  connection.prepareStatement("DELETE FROM " + entity.getClass().getSimpleName() + " WHERE id = ?");
             paramsStatement.setString(1, entity.getId());
-            paramsStatement.executeUpdate();
         } catch (SQLException e) {
             logger.error("Can't delete record ", e);
-            e.printStackTrace();
+        } finally {
+            freeResources(connection, paramsStatement);
         }
     }
 
-    abstract protected PreparedStatement getAddEntityQuery(T entity) throws SQLException;
+    protected  abstract PreparedStatement getAddEntityQuery(T entity, Connection connection) throws SQLException;
 }
