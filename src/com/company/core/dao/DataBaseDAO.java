@@ -1,21 +1,16 @@
 package com.company.core.dao;
 
 import com.company.api.DAO;
-import com.company.core.api.Constants;
-import com.company.core.entity.Account;
 import com.company.core.entity.Entity;
-import com.company.core.dao.DBHelper;
-import oracle.jdbc.proxy.annotation.Pre;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static com.company.core.dao.DBHelper.*;
 
-/**
+/** Common class for entities which defines methods for adding, removal and updating entities
  * @author Sophie
  * @date 25.03.2015.
  */

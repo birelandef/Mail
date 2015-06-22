@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc883057-4c74-47eb-ac60-94ebef139b9e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\production\Mail\com\company\core\dao\ConnectionwithDB.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\test\Mail\com\company\core\dao\ConnectionwithDBTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\test\Mail\com\company\core\dao\EntityDBDAO\AttachmentDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\test\com\company\core\dao\ConnectionwithDBTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/cache/AbstractCache.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/cache/AbstractCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/AbstractFactory.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/AbstractFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AccountDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AccountDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/AccountDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/AccountDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AttachmentDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AttachmentDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/Constants.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/ContactDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/ContactDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/ContactDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/ContactDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/api/DAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/api/DAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/DataBaseDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/DataBaseDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/factory/EntityFactoryImpl.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/factory/EntityFactoryImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/api/EntityFactoryInterface.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/api/EntityFactoryInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/FolderDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/FolderDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/FolderDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/FolderDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/entity/Letter.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/entity/Letter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/LetterDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/LetterDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/LetterDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/LetterDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/PersonDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/PersonDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/PersonDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/PersonDAOTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/api/Constants.java" afterPath="$PROJECT_DIR$/src/com/company/core/api/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/api/DAO.java" afterPath="$PROJECT_DIR$/src/com/company/api/DAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" afterPath="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject-debug.log" afterPath="$PROJECT_DIR$/myproject-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject.log" afterPath="$PROJECT_DIR$/myproject.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mail.iws" />
@@ -72,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
               <folding>
                 <marker date="1434989762740" expanded="true" signature="960:985" placeholder="SELECT * FRO..ATTACHMENT..." />
                 <marker date="1434989762740" expanded="true" signature="2306:2351" placeholder="INSERT INTO ..." />
@@ -82,45 +40,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactDAOTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java">
+      <file leaf-file-name="ContactDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+              <caret line="68" column="33" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1434989740981" expanded="true" signature="1075:1133" placeholder="SELECT * FRO..CONTACT..." />
-                <marker date="1434989740981" expanded="true" signature="1619:1647" placeholder="SELECT COUNT..CONTACT..." />
-                <marker date="1434989740981" expanded="true" signature="2387:2448" placeholder="SELECT NAME ..CONTACT..." />
-                <marker date="1434989740981" expanded="true" signature="2880:2938" placeholder="SELECT * FRO..CONTACT..." />
+                <marker date="1434981499544" expanded="true" signature="1073:1094" placeholder="SELECT * FRO..CONTACT..." />
+                <marker date="1434981499544" expanded="true" signature="2169:2218" placeholder="SELECT * FRO..CONTACT..." />
+                <marker date="1434981499544" expanded="true" signature="3205:3241" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FolderDAOTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java">
+      <file leaf-file-name="FolderDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="36" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="36" />
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1434982964950" expanded="true" signature="960:1009" placeholder="SELECT * FRO..FOLDER..." />
+                <marker date="1434982964950" expanded="true" signature="2337:2378" placeholder="INSERT INTO ..." />
+                <marker date="1434982964950" expanded="true" signature="3179:3200" placeholder="SELECT * FRO..FOLDER..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttachmentDAOTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java">
+      <file leaf-file-name="LetterDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1434989830488" expanded="true" signature="3265:3296" placeholder="SELECT COUNT..ATTACHMENT..." />
-                <marker date="1434989830488" expanded="true" signature="3692:3757" placeholder="SELECT * FRO..ATTACHMENT..." />
-                <marker date="1434989830488" expanded="true" signature="4570:4637" placeholder="SELECT NAME ..ATTACHMENT..." />
-                <marker date="1434989830488" expanded="true" signature="5135:5199" placeholder="SELECT * FRO..ATTACHMENT..." />
+                <element signature="method#convertList2String#0;class#LetterDAO#0" expanded="false" />
+                <element signature="e#4397#4405#0" expanded="true" />
+                <marker date="1434988879073" expanded="true" signature="1547:1596" placeholder="SELECT * FRO..LETTER..." />
+                <marker date="1434988879073" expanded="true" signature="3217:3266" placeholder="INSERT INTO ..." />
+                <marker date="1434988879073" expanded="true" signature="4706:4727" placeholder="SELECT * FRO..LETTER..." />
+                <marker date="1434988879073" expanded="true" signature="6813:6873" placeholder="SELECT * FRO..ATTACHMENT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+              <folding>
+                <marker date="1434979816639" expanded="true" signature="1664:1711" placeholder="INSERT INTO ..." />
+                <marker date="1434979816639" expanded="true" signature="2853:2892" placeholder="INSERT INTO ..." />
+                <marker date="1434979816639" expanded="true" signature="3988:4009" placeholder="SELECT * FRO..PERSON..." />
+                <marker date="1434979816639" expanded="true" signature="5647:5703" placeholder="SELECT * FRO..ACCOUNT..." />
+                <marker date="1434979816639" expanded="true" signature="6706:6821" placeholder="SELECT * FRO..PERSON_CONTACT..." />
               </folding>
             </state>
           </provider>
@@ -136,27 +111,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityFactoryImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EntityFactoryImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22193211">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LetterDAOTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java">
+      <file leaf-file-name="AccountDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="38" />
+              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1434988879063" expanded="true" signature="2496:2553" placeholder="SELECT * FRO..LETTER..." />
-                <marker date="1434988879063" expanded="true" signature="3099:3126" placeholder="SELECT COUNT..LETTER..." />
-                <marker date="1434988879063" expanded="true" signature="3936:3998" placeholder="SELECT SUBJE..LETTER..." />
-                <marker date="1434988879063" expanded="true" signature="4557:4613" placeholder="SELECT * FRO..LETTER..." />
+                <marker date="1434977184030" expanded="true" signature="1769:1797" placeholder="SELECT COUNT..ACCOUNT..." />
+                <marker date="1434977184030" expanded="true" signature="2340:2398" placeholder="SELECT * FRO..ACCOUNT..." />
+                <marker date="1434977184030" expanded="true" signature="3361:3436" placeholder="SELECT INCOM..ACCOUNT..." />
+                <marker date="1434977184030" expanded="true" signature="4040:4098" placeholder="SELECT * FRO..account..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding>
+                <marker date="1434977184161" expanded="true" signature="952:992" placeholder="INSERT INTO ..." />
+                <marker date="1434977184161" expanded="true" signature="1682:1726" placeholder="SELECT * FRO..ACCOUNT..." />
+                <marker date="1434977184161" expanded="true" signature="3017:3039" placeholder="SELECT * FRO..ACCOUNT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataBaseDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6197917">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1435001213817" expanded="true" signature="1437:1503" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
@@ -220,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/api/Constants.java" />
         <option value="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
         <option value="$PROJECT_DIR$/src/com/company/api/DAO.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" />
         <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" />
@@ -236,6 +237,7 @@
         <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" />
         <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
       </list>
     </option>
   </component>
@@ -284,9 +286,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-        <subPane subId="Default" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -574,10 +576,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+        <subPane subId="Default" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1114,12 +1116,13 @@
       <workItem from="1434798161870" duration="794000" />
       <workItem from="1434916350955" duration="3757000" />
       <workItem from="1434920141649" duration="3597000" />
-      <workItem from="1434964870032" duration="21775000" />
+      <workItem from="1434964870032" duration="21862000" />
+      <workItem from="1435000719336" duration="1085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163851000" />
+    <option name="totallyTimeSpent" value="165023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1132,17 +1135,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32899022" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03752039" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1152,15 +1153,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1389,7 +1392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4068376">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,7 +1407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3700" column="0" selection-start-line="3700" selection-start-column="0" selection-end-line="3700" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
@@ -1416,7 +1417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1424,20 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1434974608069" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,7 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,7 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1461,10 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,7 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14357683">
           <caret line="77" column="116" selection-start-line="76" selection-start-column="23" selection-end-line="77" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,52 +1463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="49" />
-          <folding>
-            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
-            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3858025">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding>
-            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
-            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
-            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
-            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          <folding>
-            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PERSON..." />
-            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
-            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="4" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1537,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="403" column="33" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1559,51 +1495,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="74" selection-start-line="71" selection-start-column="12" selection-end-line="72" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4229765">
-          <caret line="31" column="109" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="109" />
-          <folding>
-            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..FOLDER..." />
-            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..FOLDER..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Letter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7519581">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3550914">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="method#convertList2String#0;class#LetterDAO#0" expanded="false" />
-            <element signature="e#4397#4405#0" expanded="true" />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ATTACHMENT..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1623,10 +1519,10 @@
           <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1434988879063" expanded="true" signature="2496:2553" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434988879063" expanded="true" signature="3099:3126" placeholder="SELECT COUNT..LETTER..." />
-            <marker date="1434988879063" expanded="true" signature="3936:3998" placeholder="SELECT SUBJE..LETTER..." />
-            <marker date="1434988879063" expanded="true" signature="4557:4613" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="-1:-1" placeholder="SELECT SUBJE..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
           </folding>
         </state>
       </provider>
@@ -1637,22 +1533,10 @@
           <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1434989740981" expanded="true" signature="1075:1133" placeholder="SELECT * FRO..CONTACT..." />
-            <marker date="1434989740981" expanded="true" signature="1619:1647" placeholder="SELECT COUNT..CONTACT..." />
-            <marker date="1434989740981" expanded="true" signature="2387:2448" placeholder="SELECT NAME ..CONTACT..." />
-            <marker date="1434989740981" expanded="true" signature="2880:2938" placeholder="SELECT * FRO..CONTACT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-          <folding>
-            <marker date="1434989762740" expanded="true" signature="960:985" placeholder="SELECT * FRO..ATTACHMENT..." />
-            <marker date="1434989762740" expanded="true" signature="2306:2351" placeholder="INSERT INTO ..." />
-            <marker date="1434989762740" expanded="true" signature="3187:3212" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989740981" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="-1:-1" placeholder="SELECT NAME ..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
           </folding>
         </state>
       </provider>
@@ -1663,10 +1547,10 @@
           <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1434989830488" expanded="true" signature="3265:3296" placeholder="SELECT COUNT..ATTACHMENT..." />
-            <marker date="1434989830488" expanded="true" signature="3692:3757" placeholder="SELECT * FRO..ATTACHMENT..." />
-            <marker date="1434989830488" expanded="true" signature="4570:4637" placeholder="SELECT NAME ..ATTACHMENT..." />
-            <marker date="1434989830488" expanded="true" signature="5135:5199" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="-1:-1" placeholder="SELECT NAME ..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ATTACHMENT..." />
           </folding>
         </state>
       </provider>
@@ -1681,9 +1565,111 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22193211">
+        <state vertical-scroll-proportion="0.0">
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1434977184030" expanded="true" signature="1769:1797" placeholder="SELECT COUNT..ACCOUNT..." />
+            <marker date="1434977184030" expanded="true" signature="2340:2398" placeholder="SELECT * FRO..ACCOUNT..." />
+            <marker date="1434977184030" expanded="true" signature="3361:3436" placeholder="SELECT INCOM..ACCOUNT..." />
+            <marker date="1434977184030" expanded="true" signature="4040:4098" placeholder="SELECT * FRO..account..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+          <folding>
+            <marker date="1434979816639" expanded="true" signature="1664:1711" placeholder="INSERT INTO ..." />
+            <marker date="1434979816639" expanded="true" signature="2853:2892" placeholder="INSERT INTO ..." />
+            <marker date="1434979816639" expanded="true" signature="3988:4009" placeholder="SELECT * FRO..PERSON..." />
+            <marker date="1434979816639" expanded="true" signature="5647:5703" placeholder="SELECT * FRO..ACCOUNT..." />
+            <marker date="1434979816639" expanded="true" signature="6706:6821" placeholder="SELECT * FRO..PERSON_CONTACT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="method#convertList2String#0;class#LetterDAO#0" expanded="false" />
+            <element signature="e#4397#4405#0" expanded="true" />
+            <marker date="1434988879073" expanded="true" signature="1547:1596" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="3217:3266" placeholder="INSERT INTO ..." />
+            <marker date="1434988879073" expanded="true" signature="4706:4727" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="6813:6873" placeholder="SELECT * FRO..ATTACHMENT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <marker date="1434982964950" expanded="true" signature="960:1009" placeholder="SELECT * FRO..FOLDER..." />
+            <marker date="1434982964950" expanded="true" signature="2337:2378" placeholder="INSERT INTO ..." />
+            <marker date="1434982964950" expanded="true" signature="3179:3200" placeholder="SELECT * FRO..FOLDER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <marker date="1434981499544" expanded="true" signature="1073:1094" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434981499544" expanded="true" signature="2169:2218" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434981499544" expanded="true" signature="3205:3241" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding>
+            <marker date="1434989762740" expanded="true" signature="960:985" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989762740" expanded="true" signature="2306:2351" placeholder="INSERT INTO ..." />
+            <marker date="1434989762740" expanded="true" signature="3187:3212" placeholder="SELECT * FRO..ATTACHMENT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <marker date="1434977184161" expanded="true" signature="952:992" placeholder="INSERT INTO ..." />
+            <marker date="1434977184161" expanded="true" signature="1682:1726" placeholder="SELECT * FRO..ACCOUNT..." />
+            <marker date="1434977184161" expanded="true" signature="3017:3039" placeholder="SELECT * FRO..ACCOUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6197917">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1435001213817" expanded="true" signature="1437:1503" placeholder="DELETE FROM ..." />
+          </folding>
         </state>
       </provider>
     </entry>
