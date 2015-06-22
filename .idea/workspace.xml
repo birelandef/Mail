@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc883057-4c74-47eb-ac60-94ebef139b9e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="dc883057-4c74-47eb-ac60-94ebef139b9e" name="Default" comment="" />
     <ignored path="Mail.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -154,8 +151,8 @@
       <file leaf-file-name="DataBaseDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6197917">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state vertical-scroll-proportion="2.7005208">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1435001213817" expanded="true" signature="1437:1503" placeholder="DELETE FROM ..." />
@@ -1117,12 +1114,12 @@
       <workItem from="1434916350955" duration="3757000" />
       <workItem from="1434920141649" duration="3597000" />
       <workItem from="1434964870032" duration="21862000" />
-      <workItem from="1435000719336" duration="1085000" />
+      <workItem from="1435000719336" duration="1773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165023000" />
+    <option name="totallyTimeSpent" value="165711000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1134,7 +1131,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1664,8 +1661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6197917">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state vertical-scroll-proportion="2.7005208">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1435001213817" expanded="true" signature="1437:1503" placeholder="DELETE FROM ..." />
