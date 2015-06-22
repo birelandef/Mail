@@ -1,5 +1,6 @@
 package com.company.core.dao.EntityDBDAO;
 
+import com.company.core.dao.DBHelper;
 import com.company.core.dao.DataBaseDAO;
 import com.company.core.entity.Account;
 import com.company.core.factory.EntityFactoryImpl;
@@ -11,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 import static com.company.core.dao.DBHelper.*;
 
@@ -33,10 +35,36 @@ public class AccountDAO extends DataBaseDAO<Account> {
         paramsStatement.setString(6, entity.getIdPerson());
         return paramsStatement;
     }
-
+    @Override
+    public Account findEntityById(String id){
+        Connection connection = DBHelper.getConnection();
+        PreparedStatement paramsStatement = null;
+        ResultSet resultSet = null;
+        try {
+            paramsStatement = connection.prepareStatement("SELECT *  FROM ACCOUNT WHERE ID='" + id + "'");
+            resultSet = paramsStatement.executeQuery();
+            if (resultSet.next()) {
+                String email = resultSet.getString("email");
+                String password = resultSet.getString("password");
+                String out = resultSet.getString("outgoingMailServer");
+                String in = resultSet.getString("incomingMailServer");
+                String idPerson = resultSet.getString("idPerson");
+                EntityFactoryImpl factory = (EntityFactoryImpl) EntityFactoryImpl.getInstance();
+                Account account = factory.createAccount(email, password, out, in, idPerson);
+                account.setId(resultSet.getString("id"));
+                return account;
+            }
+        } catch (SQLException e){
+            logger.error("Can't read entity", e);
+            return null;
+        }finally {
+            freeResources(connection, paramsStatement, resultSet);
+        }
+        return null;
+    }
 
     @Override
-    public Collection<Account> getAllEntity(Class<Account> entityClass) {
+    public Collection<Account> getAllEntity() {
         Collection<Account> collection = new ArrayList<>();
         Connection connection = getConnection();
         PreparedStatement paramsStatement = null;
@@ -45,7 +73,6 @@ public class AccountDAO extends DataBaseDAO<Account> {
             paramsStatement = connection.prepareStatement("SELECT *  FROM ACCOUNT");
             resultSet = paramsStatement.executeQuery();
             while (resultSet.next()) {
-
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
                 String out = resultSet.getString("outgoingMailServer");

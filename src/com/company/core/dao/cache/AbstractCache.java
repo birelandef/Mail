@@ -27,7 +27,7 @@ public abstract class AbstractCache<T extends Entity> implements DAO<T> {
 
     protected abstract Class<T> getClassEntity();
 
-    public Collection<T> getAllEntity(Class<T> entityClass) {
+    public Collection<T> getAllEntity() {
         List<T> entities = new ArrayList<T>();
         for (Map.Entry<String, T> entry : cache.entrySet()) {
             T entity = entry.getValue();

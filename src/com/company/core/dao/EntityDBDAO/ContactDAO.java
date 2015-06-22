@@ -1,5 +1,6 @@
 package com.company.core.dao.EntityDBDAO;
 
+import com.company.core.dao.DBHelper;
 import com.company.core.dao.DataBaseDAO;
 import com.company.core.entity.Contact;
 import com.company.core.factory.EntityFactoryImpl;
@@ -25,7 +26,7 @@ public class ContactDAO extends DataBaseDAO<Contact>{
     private static final Logger logger = Logger.getLogger(ContactDAO.class);
 
     @Override
-    public Collection<Contact> getAllEntity(Class<Contact> entityClass) {
+    public Collection<Contact> getAllEntity() {
         Collection<Contact> collection = new ArrayList<Contact>();
         Connection connection = getConnection();
         PreparedStatement  paramsStatement = null;
@@ -44,11 +45,39 @@ public class ContactDAO extends DataBaseDAO<Contact>{
                 collection.add(contact);
             }
         } catch (SQLException e) {
-            logger.error("Can't delete record ", e);
+            logger.error("Can't read record ", e);
         } finally {
             freeResources(connection, paramsStatement, resultSet);
         }
         return collection;
+    }
+
+    @Override
+    public Contact findEntityById(String idEntity) {
+        Connection connection = DBHelper.getConnection();
+        PreparedStatement paramsStatement = null;
+        ResultSet resultSet = null;
+        try {
+            paramsStatement = connection.prepareStatement("SELECT * FROM CONTACT WHERE ID='" + idEntity + "'");
+            resultSet = paramsStatement.executeQuery();
+            if (resultSet.next()) {
+
+                String email = resultSet.getString("email");
+                String name = resultSet.getString("name");
+                String surname = resultSet.getString("surname");
+
+                EntityFactoryImpl factory = (EntityFactoryImpl) EntityFactoryImpl.getInstance();
+                Contact contact = factory.createContact(email, name, surname);
+                contact.setId(resultSet.getString("id"));
+                return  contact;
+            }
+        } catch (SQLException e) {
+            logger.error("Can't read entity", e);
+            return null;
+        } finally {
+            freeResources(connection, paramsStatement, resultSet);
+        }
+        return null;
     }
 
     protected PreparedStatement getAddEntityQuery(Contact entity, Connection connection) throws SQLException {

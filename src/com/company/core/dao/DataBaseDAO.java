@@ -1,12 +1,16 @@
 package com.company.core.dao;
 
 import com.company.api.DAO;
+import com.company.core.api.Constants;
+import com.company.core.entity.Account;
 import com.company.core.entity.Entity;
 import com.company.core.dao.DBHelper;
+import oracle.jdbc.proxy.annotation.Pre;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static com.company.core.dao.DBHelper.*;
@@ -18,14 +22,6 @@ import static com.company.core.dao.DBHelper.*;
 public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
 
     private static final Logger logger = Logger.getLogger(DataBaseDAO.class);
-
-//    protected DataBaseDAO() throws  RuntimeException{
-//        dataBase = ConnectionwithDB.getInstance();
-//        if (dataBase == null) {
-//            throw  new RuntimeException();
-//        }
-//    }
-
 
     @Override
     public void addEntity(T entity) {
@@ -43,9 +39,7 @@ public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
 
 
     @Override
-    public T findEntityById(String idEntity) {
-        return null;
-    }
+    abstract public T findEntityById(String idEntity);
 
     @Override
     public void updateEntity(T entity) {
@@ -60,6 +54,7 @@ public abstract class DataBaseDAO<T extends Entity> implements DAO<T> {
         try {
             paramsStatement =  connection.prepareStatement("DELETE FROM " + entity.getClass().getSimpleName() + " WHERE id = ?");
             paramsStatement.setString(1, entity.getId());
+            paramsStatement.executeUpdate();
         } catch (SQLException e) {
             logger.error("Can't delete record ", e);
         } finally {

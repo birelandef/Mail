@@ -21,10 +21,9 @@ public interface DAO<T extends Entity> {
     /**
      * Get all entity from storage
      *
-     * @param entityClass
      * @return
      */
-    Collection<T> getAllEntity(Class<T> entityClass);
+    Collection<T> getAllEntity();
 
     /**
      * Find entyty by id

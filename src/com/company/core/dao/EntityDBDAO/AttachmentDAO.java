@@ -1,5 +1,6 @@
 package com.company.core.dao.EntityDBDAO;
 
+import com.company.core.dao.DBHelper;
 import com.company.core.dao.DataBaseDAO;
 import com.company.core.entity.Attachment;
 import com.company.core.factory.EntityFactoryImpl;
@@ -21,6 +22,36 @@ public class AttachmentDAO extends DataBaseDAO<Attachment> {
     private static Logger logger = Logger.getLogger(AttachmentDAO.class);
 
     @Override
+    public Attachment findEntityById(String idEntity) {
+        Connection connection = DBHelper.getConnection();
+        PreparedStatement paramsStatement = null;
+        ResultSet resultSet = null;
+        try{
+            paramsStatement = connection.prepareStatement("SELECT *  FROM ATTACHMENT");
+            resultSet = paramsStatement.executeQuery();
+            if (resultSet.next()) {
+                String name = resultSet.getString("name");
+                Blob files = resultSet.getBlob("files");
+                byte[] content = files.getBytes(1, (int) files.length());
+                String idLetter = resultSet.getString("IDLETTER");
+                String idFolder = resultSet.getString("IDFOLDER");
+                String idAccount = resultSet.getString("IDACCOUNT");
+                String idPerson = resultSet.getString("IDPERSON");
+                EntityFactoryImpl factory = (EntityFactoryImpl) EntityFactoryImpl.getInstance();
+                Attachment attachment = factory.createAttachment(name, content, idLetter, idFolder, idAccount, idPerson);
+                attachment.setId(resultSet.getString("id"));
+                return attachment;
+            }
+        } catch (SQLException e) {
+            logger.error("Can't read entity", e);
+            return null;
+        } finally {
+            freeResources(connection, paramsStatement, resultSet);
+        }
+        return null;
+    }
+
+    @Override
     protected PreparedStatement getAddEntityQuery(Attachment entity, Connection connection) throws SQLException {
         PreparedStatement paramsStatement = connection.prepareStatement("INSERT INTO ATTACHMENT VALUES (?,?,?,?,?,?,?)");
         paramsStatement.setString(1, entity.getId());
@@ -35,7 +66,7 @@ public class AttachmentDAO extends DataBaseDAO<Attachment> {
     }
 
     @Override
-    public Collection<Attachment> getAllEntity(Class<Attachment> entityClass) {
+    public Collection<Attachment> getAllEntity() {
         Collection<Attachment> collection = new ArrayList<>();
         Connection connection = getConnection();
         PreparedStatement paramsStatement = null;
@@ -47,7 +78,7 @@ public class AttachmentDAO extends DataBaseDAO<Attachment> {
 
                 String name = resultSet.getString("name");
                 Blob files = resultSet.getBlob("files");
-                byte[] content = files.getBytes(0, (int) files.length());
+                byte[] content = files.getBytes(1, (int) files.length());
                 String idLetter = resultSet.getString("IDLETTER");
                 String idFolder = resultSet.getString("IDFOLDER");
                 String idAccount = resultSet.getString("IDACCOUNT");

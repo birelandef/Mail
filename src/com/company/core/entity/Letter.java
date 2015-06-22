@@ -19,7 +19,6 @@ public class Letter extends Entity {
      * The identifier of the folder containing the message
      */
     private String idFolder;
-
     /**
      * The idAccount identifier
      */
@@ -35,12 +34,10 @@ public class Letter extends Entity {
     /**
      * A list of electronic mailbox address of the recipients of the letter
      */
-    //TODO в схеме?
     private List<String> toWhom = new ArrayList<String>();
     /**
      * A list of email addresses mailboxes of recipients of copies of the letter
      */
-    //TODO в схеме?
     private List<String> copy = new ArrayList<String>();
     /**
      * Message subject
@@ -53,7 +50,6 @@ public class Letter extends Entity {
     /**
      * The list of files attached to the message
      */
-    //TODO в схеме?
     private List<Attachment> attachments = new ArrayList<>();
     /**
      * Date receive or send message

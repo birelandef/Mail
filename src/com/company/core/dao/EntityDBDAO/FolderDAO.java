@@ -24,6 +24,39 @@ public class FolderDAO extends DataBaseDAO<Folder> {
     private static Logger logger = Logger.getLogger(FolderDAO.class);
 
     @Override
+    public Folder findEntityById(String idEntity) {
+        Connection connection = getConnection();
+        PreparedStatement paramsStatement = null;
+        ResultSet resultSet = null;
+        try {
+            paramsStatement = connection.prepareStatement("SELECT *  FROM FOLDER WHERE ID='" + idEntity + "'");
+            resultSet = paramsStatement.executeQuery();
+            if (resultSet.next()) {
+
+                String idAccount = resultSet.getString("idAccount");
+                String name = resultSet.getString("name");
+                String idParentFolder = resultSet.getString("idParentFolder");
+                String idPerson = resultSet.getString("idPerson");
+                Boolean isSystemFolder = resultSet.getBoolean("isSystemFolder");
+                String description = resultSet.getString("description");
+
+                EntityFactoryImpl factory = (EntityFactoryImpl) EntityFactoryImpl.getInstance();
+                Folder folder = factory.createFolder(idAccount, name,
+                        idParentFolder, idPerson,isSystemFolder,
+                        description);
+                folder.setId(resultSet.getString("id"));
+                return folder;
+            }
+        } catch (SQLException e) {
+            logger.error("Can't read entity", e);
+            return null;
+        } finally {
+            freeResources(connection,paramsStatement,resultSet);
+        }
+        return null;
+    }
+
+    @Override
     protected PreparedStatement getAddEntityQuery(Folder entity, Connection connection) throws SQLException {
         PreparedStatement paramsStatement = connection.prepareStatement("INSERT INTO FOLDER VALUES (?,?,?,?,?,?,?)");
         paramsStatement.setString(1, entity.getId());
@@ -37,7 +70,7 @@ public class FolderDAO extends DataBaseDAO<Folder> {
     }
 
     @Override
-    public Collection<Folder> getAllEntity(Class<Folder> entityClass) {
+    public Collection<Folder> getAllEntity() {
         Collection<Folder> collection = new ArrayList<Folder>();
         Connection connection = getConnection();
         PreparedStatement paramsStatement = null;

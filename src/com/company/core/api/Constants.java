@@ -12,6 +12,6 @@ public interface Constants {
     String URL = "jdbc:oracle:thin:@localhost:1521/XE";
     String name = "SOPHIE";
     String password  = "SOPHIE";
-
+    String [] priorityOfTable = {"LETTER", "FOLDER", "PERSON", "ACCOUNT", "ATTACHMENT", "CONTACT"};
 
 }

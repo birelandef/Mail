@@ -2,26 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc883057-4c74-47eb-ac60-94ebef139b9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/core/dao/DBHelper.java" />
-      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\src\com\company\core\dao\ConnectionwithDB.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/api/AbstractFactory.java" afterPath="$PROJECT_DIR$/src/com/company/core/api/AbstractFactory.java" />
+      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\production\Mail\com\company\core\dao\ConnectionwithDB.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\test\Mail\com\company\core\dao\ConnectionwithDBTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\out\test\Mail\com\company\core\dao\EntityDBDAO\AttachmentDAOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sophie\Desktop\Mail2\test\com\company\core\dao\ConnectionwithDBTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/cache/AbstractCache.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/cache/AbstractCache.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/AbstractFactory.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/AbstractFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AccountDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AccountDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/AccountDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/AccountDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AttachmentDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/AttachmentDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/Constants.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/api/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/ContactDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/ContactDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/ContactDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/ContactDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/api/DAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/api/DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/DataBaseDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/DataBaseDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/factory/EntityFactoryImpl.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/factory/EntityFactoryImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/api/EntityFactoryInterface.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/api/EntityFactoryInterface.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/FolderDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/FolderDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/FolderDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/FolderDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/entity/Letter.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/entity/Letter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/LetterDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/LetterDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/LetterDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/LetterDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/PersonDAO.class" afterPath="$PROJECT_DIR$/out/production/Mail/com/company/core/dao/EntityDBDAO/PersonDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/PersonDAOTest.class" afterPath="$PROJECT_DIR$/out/test/Mail/com/company/core/dao/EntityDBDAO/PersonDAOTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/api/Constants.java" afterPath="$PROJECT_DIR$/src/com/company/core/api/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/api/DAO.java" afterPath="$PROJECT_DIR$/src/com/company/api/DAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java" afterPath="$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java" afterPath="$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" afterPath="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java" afterPath="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" afterPath="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject-debug.log" afterPath="$PROJECT_DIR$/myproject-debug.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myproject.log" afterPath="$PROJECT_DIR$/myproject.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mail.iws" />
@@ -45,105 +68,96 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LetterDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
+      <file leaf-file-name="AttachmentDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+              <folding>
+                <marker date="1434989762740" expanded="true" signature="960:985" placeholder="SELECT * FRO..ATTACHMENT..." />
+                <marker date="1434989762740" expanded="true" signature="2306:2351" placeholder="INSERT INTO ..." />
+                <marker date="1434989762740" expanded="true" signature="3187:3212" placeholder="SELECT * FRO..ATTACHMENT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1434798814271" expanded="true" signature="2027:2039" placeholder="INSERT INTO ..." />
-                <marker date="1434798814271" expanded="true" signature="2027:2074" placeholder="INSERT INTO ..." />
-                <marker date="1434798814271" expanded="true" signature="2057:2074" placeholder="VALUES(?,?,?..." />
-                <marker date="1434798814271" expanded="true" signature="2751:2796" placeholder="INSERT INTO ..." />
-                <marker date="1434798814271" expanded="true" signature="3810:3825" placeholder="SELECT * FRO..missingValue..." />
-                <marker date="1434798814271" expanded="true" signature="3810:3831" placeholder="SELECT * FRO..LETTER..." />
-                <marker date="1434798814271" expanded="true" signature="5501:5569" placeholder="SELECT * FRO..missingValue..." />
-                <marker date="1434798814271" expanded="true" signature="6206:6267" placeholder="SELECT * FRO..ATTACHMENT..." />
+                <marker date="1434989740981" expanded="true" signature="1075:1133" placeholder="SELECT * FRO..CONTACT..." />
+                <marker date="1434989740981" expanded="true" signature="1619:1647" placeholder="SELECT COUNT..CONTACT..." />
+                <marker date="1434989740981" expanded="true" signature="2387:2448" placeholder="SELECT NAME ..CONTACT..." />
+                <marker date="1434989740981" expanded="true" signature="2880:2938" placeholder="SELECT * FRO..CONTACT..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Letter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Letter.java">
+      <file leaf-file-name="FolderDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+              <caret line="71" column="36" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="36" />
               <folding>
-                <element signature="e#2005#2006#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#2084#2085#0" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityFactoryInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java">
+      <file leaf-file-name="AttachmentDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="116" selection-start-line="76" selection-start-column="23" selection-end-line="77" selection-end-column="116" />
+              <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1434989830488" expanded="true" signature="3265:3296" placeholder="SELECT COUNT..ATTACHMENT..." />
+                <marker date="1434989830488" expanded="true" signature="3692:3757" placeholder="SELECT * FRO..ATTACHMENT..." />
+                <marker date="1434989830488" expanded="true" signature="4570:4637" placeholder="SELECT NAME ..ATTACHMENT..." />
+                <marker date="1434989830488" expanded="true" signature="5135:5199" placeholder="SELECT * FRO..ATTACHMENT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/api/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java">
+      <file leaf-file-name="EntityFactoryImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23247863">
-              <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getAddEntityQuery#0;class#PersonDAO#0" expanded="false" />
-                <element signature="method#getAccounts#0;class#PersonDAO#0" expanded="false" />
-                <element signature="method#getContacts#0;class#PersonDAO#0" expanded="false" />
-                <marker date="1434756582346" expanded="true" signature="1555:1602" placeholder="INSERT INTO ..." />
-                <marker date="1434756582346" expanded="true" signature="2744:2763" placeholder="INSERT INTO ..." />
-                <marker date="1434756582346" expanded="true" signature="2744:2783" placeholder="INSERT INTO ..." />
-                <marker date="1434756582346" expanded="true" signature="3904:3925" placeholder="SELECT * FRO..PERSONmissingValue..." />
-                <marker date="1434756582346" expanded="true" signature="5564:5604" placeholder="SELECT * FRO..ACCOUNT..." />
-                <marker date="1434756582346" expanded="true" signature="6618:6647" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-                <marker date="1434756582346" expanded="true" signature="6618:6648" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-                <marker date="1434756582346" expanded="true" signature="6618:6680" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-                <marker date="1434756582346" expanded="true" signature="6618:6681" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-                <marker date="1434756582346" expanded="true" signature="6618:6695" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22193211">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBaseDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
+      <file leaf-file-name="LetterDAOTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="5" selection-start-line="29" selection-start-column="3" selection-end-line="41" selection-end-column="5" />
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1434588300594" expanded="true" signature="1614:1680" placeholder="DELETE FROM ..." />
+                <marker date="1434988879063" expanded="true" signature="2496:2553" placeholder="SELECT * FRO..LETTER..." />
+                <marker date="1434988879063" expanded="true" signature="3099:3126" placeholder="SELECT COUNT..LETTER..." />
+                <marker date="1434988879063" expanded="true" signature="3936:3998" placeholder="SELECT SUBJE..LETTER..." />
+                <marker date="1434988879063" expanded="true" signature="4557:4613" placeholder="SELECT * FRO..LETTER..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -179,8 +193,6 @@
         <option value="$PROJECT_DIR$/src/com/company/core/dao/cache/FolderCache.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/cache/LetterCache.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/cache/PersonCache.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" />
-        <option value="$PROJECT_DIR$/src/com/company/api/DAO.java" />
         <option value="$PROJECT_DIR$/Mail.iml" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/ConnectToDataBase.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/ConnectionWithDataBase.java" />
@@ -194,34 +206,36 @@
         <option value="$PROJECT_DIR$/src/com/company/core/dao/Statements/ContactStatement.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/Statements.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/CreateStatements.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/api/Constants.java" />
         <option value="$PROJECT_DIR$/src/com/company/api/Gender.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Attachment.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Account.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Contact.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Folder.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/entity/Person.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" />
-        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/ConnectionwithDB.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/api/AbstractFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" />
         <option value="$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/api/Constants.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/company/api/DAO.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/entity/Letter.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java" />
+        <option value="$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java" />
       </list>
     </option>
   </component>
@@ -265,13 +279,14 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
+      <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+        <subPane subId="Default" />
       </pane>
       <pane id="ProjectPane">
         <subPane>
@@ -308,6 +323,58 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mail2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mail2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EntityDBDAO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -342,6 +409,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -503,9 +574,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-        <subPane subId="Default" />
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -550,7 +620,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AttachmentDAOTest">
-    <configuration default="false" name="PersonDAOTest.testRemoveEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AttachmentDAOTest.testAddEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.company.core.dao.EntityDBDAO.*" />
@@ -561,33 +631,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.company.core.dao.EntityDBDAO" />
-      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.PersonDAOTest" />
-      <option name="METHOD_NAME" value="testRemoveEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PersonDAOTest.testAddEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.core.dao.EntityDBDAO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Mail" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.company.core.dao.EntityDBDAO" />
-      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.PersonDAOTest" />
+      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.AttachmentDAOTest" />
       <option name="METHOD_NAME" value="testAddEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -602,7 +646,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PersonDAOTest.testUpdateEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AttachmentDAOTest.testUpdateEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.company.core.dao.EntityDBDAO.*" />
@@ -613,7 +657,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.company.core.dao.EntityDBDAO" />
-      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.PersonDAOTest" />
+      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.AttachmentDAOTest" />
       <option name="METHOD_NAME" value="testUpdateEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -628,7 +672,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PersonDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="AttachmentDAOTest.testGetAllEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.company.core.dao.EntityDBDAO.*" />
@@ -639,9 +683,35 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.company.core.dao.EntityDBDAO" />
-      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.PersonDAOTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.AttachmentDAOTest" />
+      <option name="METHOD_NAME" value="testGetAllEntity" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AttachmentDAOTest.testFindEntityById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.company.core.dao.EntityDBDAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Mail" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.company.core.dao.EntityDBDAO" />
+      <option name="MAIN_CLASS_NAME" value="com.company.core.dao.EntityDBDAO.AttachmentDAOTest" />
+      <option name="METHOD_NAME" value="testFindEntityById" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -980,19 +1050,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testRemoveEntity" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testAddEntity" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testUpdateEntity" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PersonDAOTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testAddEntity" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testUpdateEntity" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testGetAllEntity" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testFindEntityById" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PersonDAOTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testUpdateEntity" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testAddEntity" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PersonDAOTest.testRemoveEntity" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testFindEntityById" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testGetAllEntity" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testAddEntity" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AttachmentDAOTest.testUpdateEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,12 +1111,15 @@
       <workItem from="1434578963661" duration="6326000" />
       <workItem from="1434668852723" duration="4530000" />
       <workItem from="1434727891787" duration="7650000" />
-      <workItem from="1434798161870" duration="745000" />
+      <workItem from="1434798161870" duration="794000" />
+      <workItem from="1434916350955" duration="3757000" />
+      <workItem from="1434920141649" duration="3597000" />
+      <workItem from="1434964870032" duration="21775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134673000" />
+    <option name="totallyTimeSpent" value="163851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1059,38 +1132,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03752039" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24659607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30668843" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1115,10 +1188,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30668843" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22012103" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06656581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1157,34 +1230,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/LetterCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/ContactCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/FolderCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mail.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1196,16 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myproject.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4887005">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1272,24 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/junit-4.11.jar!/org/junit/Ignore.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37988827">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/api/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48825064">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1321,13 +1342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1356,156 +1370,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5491184">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/ConnectionwithDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4068376">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11623932">
-          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15726496">
-          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="35" selection-start-line="41" selection-start-column="8" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/api/AbstractFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3025641">
           <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="5" selection-start-line="29" selection-start-column="3" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1434588300594" expanded="true" signature="1614:1680" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Letter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2084#2085#0" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/api/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12820514">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="116" selection-start-line="76" selection-start-column="23" selection-end-line="77" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1517,44 +1385,305 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/api/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4068376">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5566751">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myproject.log">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+          <caret line="3700" column="0" selection-start-line="3700" selection-start-column="0" selection-end-line="3700" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myproject-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/DataBaseDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DataBaseDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1434798814271" expanded="true" signature="2027:2039" placeholder="INSERT INTO ..." />
-            <marker date="1434798814271" expanded="true" signature="2027:2074" placeholder="INSERT INTO ..." />
-            <marker date="1434798814271" expanded="true" signature="2057:2074" placeholder="VALUES(?,?,?..." />
-            <marker date="1434798814271" expanded="true" signature="2751:2796" placeholder="INSERT INTO ..." />
-            <marker date="1434798814271" expanded="true" signature="3810:3825" placeholder="SELECT * FRO..missingValue..." />
-            <marker date="1434798814271" expanded="true" signature="3810:3831" placeholder="SELECT * FRO..LETTER..." />
-            <marker date="1434798814271" expanded="true" signature="5501:5569" placeholder="SELECT * FRO..missingValue..." />
-            <marker date="1434798814271" expanded="true" signature="6206:6267" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434974608069" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/FolderCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/AccountCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/cache/AbstractCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="e#526#527#0" expanded="false" />
+            <element signature="e#575#576#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/api/EntityFactoryInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14357683">
+          <caret line="77" column="116" selection-start-line="76" selection-start-column="23" selection-end-line="77" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AccountDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="49" />
+          <folding>
+            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
+            <marker date="1434977184161" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/ContactDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3858025">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding>
+            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434981499544" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/PersonDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23247863">
-          <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+          <folding>
+            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PERSON..." />
+            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ACCOUNT..." />
+            <marker date="1434979816639" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PERSON_CONTACT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/PersonDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="4" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getAddEntityQuery#0;class#PersonDAO#0" expanded="false" />
-            <element signature="method#getAccounts#0;class#PersonDAO#0" expanded="false" />
-            <element signature="method#getContacts#0;class#PersonDAO#0" expanded="false" />
-            <marker date="1434756582346" expanded="true" signature="1555:1602" placeholder="INSERT INTO ..." />
-            <marker date="1434756582346" expanded="true" signature="2744:2763" placeholder="INSERT INTO ..." />
-            <marker date="1434756582346" expanded="true" signature="2744:2783" placeholder="INSERT INTO ..." />
-            <marker date="1434756582346" expanded="true" signature="3904:3925" placeholder="SELECT * FRO..PERSONmissingValue..." />
-            <marker date="1434756582346" expanded="true" signature="5564:5604" placeholder="SELECT * FRO..ACCOUNT..." />
-            <marker date="1434756582346" expanded="true" signature="6618:6647" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-            <marker date="1434756582346" expanded="true" signature="6618:6648" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-            <marker date="1434756582346" expanded="true" signature="6618:6680" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-            <marker date="1434756582346" expanded="true" signature="6618:6681" placeholder="SELECT * FRO..PERSON_CONTACT..." />
-            <marker date="1434756582346" expanded="true" signature="6618:6695" placeholder="SELECT * FRO..PERSON_CONTACT..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="403" column="33" selection-start-line="403" selection-start-column="4" selection-end-line="403" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AccountDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="74" selection-start-line="71" selection-start-column="12" selection-end-line="72" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/FolderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4229765">
+          <caret line="31" column="109" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="109" />
+          <folding>
+            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..FOLDER..." />
+            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1434982964950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..FOLDER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/entity/Letter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7519581">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/LetterDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3550914">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="method#convertList2String#0;class#LetterDAO#0" expanded="false" />
+            <element signature="e#4397#4405#0" expanded="true" />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879073" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..ATTACHMENT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/FolderDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="36" selection-start-line="68" selection-start-column="7" selection-end-line="71" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/LetterDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="47" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1434988879063" expanded="true" signature="2496:2553" placeholder="SELECT * FRO..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="3099:3126" placeholder="SELECT COUNT..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="3936:3998" placeholder="SELECT SUBJE..LETTER..." />
+            <marker date="1434988879063" expanded="true" signature="4557:4613" placeholder="SELECT * FRO..LETTER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/ContactDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1434989740981" expanded="true" signature="1075:1133" placeholder="SELECT * FRO..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="1619:1647" placeholder="SELECT COUNT..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="2387:2448" placeholder="SELECT NAME ..CONTACT..." />
+            <marker date="1434989740981" expanded="true" signature="2880:2938" placeholder="SELECT * FRO..CONTACT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/dao/EntityDBDAO/AttachmentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding>
+            <marker date="1434989762740" expanded="true" signature="960:985" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989762740" expanded="true" signature="2306:2351" placeholder="INSERT INTO ..." />
+            <marker date="1434989762740" expanded="true" signature="3187:3212" placeholder="SELECT * FRO..ATTACHMENT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/company/core/dao/EntityDBDAO/AttachmentDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="1" selection-start-line="136" selection-start-column="1" selection-end-line="136" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1434989830488" expanded="true" signature="3265:3296" placeholder="SELECT COUNT..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="3692:3757" placeholder="SELECT * FRO..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="4570:4637" placeholder="SELECT NAME ..ATTACHMENT..." />
+            <marker date="1434989830488" expanded="true" signature="5135:5199" placeholder="SELECT * FRO..ATTACHMENT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/api/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/core/factory/EntityFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22193211">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

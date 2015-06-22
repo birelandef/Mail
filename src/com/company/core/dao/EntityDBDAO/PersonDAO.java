@@ -25,20 +25,27 @@ public class PersonDAO  extends DataBaseDAO<Person>{
     private static Logger logger = Logger.getLogger(AttachmentDAO.class);
 
 
-    public void addEntity(Person entity){
+    public void addEntity(Person entity) {
         Connection connection = getConnection();
         PreparedStatement paramsStatement = null;
         try {
             paramsStatement = getAddEntityQuery(entity, connection);
             paramsStatement.executeUpdate();
             insertContacts(connection, entity.getId(), entity.getContacts());
-            insertAccounts(connection, entity.getId(), entity.getMailboxes());;
+            insertAccounts(connection, entity.getId(), entity.getMailboxes());
+            ;
         } catch (SQLException e) {
             logger.error("Can't add record ", e);
         } finally {
             freeResources(connection, paramsStatement);
         }
     }
+
+    @Override
+    public Person findEntityById(String idEntity) {
+        return null;
+    }
+
     @Override
     protected PreparedStatement getAddEntityQuery(Person entity, Connection connection) throws SQLException {
         PreparedStatement paramsStatement = connection.prepareStatement("INSERT INTO PERSON VALUES (?,?,?,?,?,?,?,?,?,?)");
@@ -82,7 +89,7 @@ public class PersonDAO  extends DataBaseDAO<Person>{
     }
 
     @Override
-    public Collection<Person> getAllEntity(Class<Person> entityClass) {
+    public Collection<Person> getAllEntity() {
         Collection<Person> collection = new ArrayList<>();
         Connection connection = getConnection();
         PreparedStatement paramsStatement = null;
@@ -97,7 +104,7 @@ public class PersonDAO  extends DataBaseDAO<Person>{
                String password = resultSet.getString("password");
                String name = resultSet.getString("Name");
                String surname = resultSet.getString("Surname");
-               Gender gender = (resultSet.getString("Genger").equals("male") ? Gender.MAN : Gender.WOMAN);
+               Gender gender = (resultSet.getString("Gender").equals("MAN") ? Gender.MAN : Gender.WOMAN);
                Date birth = resultSet.getDate("Birthday");
                String country = resultSet.getString("Country");
                String city = resultSet.getString("City");
@@ -120,7 +127,7 @@ public class PersonDAO  extends DataBaseDAO<Person>{
         PreparedStatement statementAccount = null;
         ResultSet accounts = null;
         try {
-            statementAccount = connection.prepareStatement("SELECT *  FROM ACCOUNT WHERE IDPERSON = " + idPerson);
+            statementAccount = connection.prepareStatement("SELECT *  FROM ACCOUNT WHERE IDPERSON='" + idPerson + "'");
             accounts = statementAccount.executeQuery();
             while(accounts.next()){
                 Account account = factory.createAccount(accounts.getString("email"), accounts.getString("password"),
@@ -140,13 +147,16 @@ public class PersonDAO  extends DataBaseDAO<Person>{
         PreparedStatement statementContacts = null;
         ResultSet contacts = null;
         try {
-            statementContacts = connection.prepareStatement("SELECT *  FROM PERSON_CONTACT  WHERE PERSON_CONTACT.IDPERSON = " + idPerson);
+            statementContacts = connection.prepareStatement("SELECT *  FROM PERSON_CONTACT JOIN CONTACT ON PERSON_CONTACT.IDCONTACT=CONTACT.ID WHERE IDPERSON='" + idPerson + "'");
             contacts = statementContacts.executeQuery();
-            while(contacts.next()){
+            while (contacts.next()) {
                 Contact contact = factory.createContact(contacts.getString("email"), contacts.getString("name"), contacts.getString("surname"));
                 contact.setId(contacts.getString("ID"));
                 contactsHash.put(contact.getId(), contact);
             }
+        } catch (SQLException e){
+            logger.error("Don't exists contacts", e);
+            return  contactsHash;
         } finally {
             freeResources(statementContacts, contacts);
         }
