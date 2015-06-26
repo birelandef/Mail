@@ -1,14 +1,11 @@
 package com.company.core.entity;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.sql.PreparedStatement;
-
 /**
  * The entity of the account of the mailbox
  *
  * @author Sofia Ruban
  */
+
 public class Account extends Entity {
 
     /**

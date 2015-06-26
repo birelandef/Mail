@@ -4,7 +4,6 @@ import com.company.api.Gender;
 import com.company.core.dao.DBHelper;
 import com.company.core.entity.*;
 import com.company.core.factory.EntityFactoryImpl;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
